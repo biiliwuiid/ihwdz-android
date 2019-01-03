@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/greyBackground"
+    tools:context="com.ihwdz.android.hwapp.ui.orders.payment.PaymentActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteBackground"
+        android:paddingTop="@dimen/padding_top_up"
+        android:paddingRight="@dimen/padding_right_up"
+        android:paddingLeft="@dimen/padding_left_up"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/blackText"
+            android:text="@string/pay_up"/>
+        <RadioGroup
+            android:id="@+id/radio_group_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/bt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/RadioImageStyle"
+                android:drawableLeft="@drawable/ali_pay"
+                android:text="支付宝支付"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grayLineDarker"/>
+            <RadioButton
+                android:id="@+id/bt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/RadioImageStyle"
+                android:drawableLeft="@drawable/wechat_pay"
+                android:text="微信支付"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/greyBackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_button_big"
+        android:padding="5dp"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:background="@color/whiteBackground"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_orange_oval_background"
+            android:textColor="@color/whiteBackground"
+            android:text="@string/pay_now" />
+    </LinearLayout>
+
+</LinearLayout>

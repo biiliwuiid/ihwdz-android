@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipChildren="true"
+    >
+    <RelativeLayout
+        android:id="@+id/title_bottom_news"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:gravity="center_vertical"
+        android:background="@color/whiteBackground">
+        <TextView
+            android:id="@+id/current_news"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/title_fy_news"
+            android:enabled="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@drawable/text_color_selector"
+            android:background="@drawable/text_background_selector"
+            style="@style/TitleTextStyle"
+            />
+
+        <TextView
+            android:id="@+id/industry_focused"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:layout_alignBaseline="@+id/current_news"
+            android:layout_alignBottom="@+id/current_news"
+            android:layout_toEndOf="@+id/current_news"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@drawable/text_color_selector"
+            android:background="@drawable/text_background_selector"
+            android:text="@string/title_sd_news" />
+
+        <TextView
+            android:id="@+id/market_comment"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:layout_alignBaseline="@+id/industry_focused"
+            android:layout_alignBottom="@+id/industry_focused"
+            android:layout_toEndOf="@+id/industry_focused"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@drawable/text_color_selector"
+            android:background="@drawable/text_background_selector"
+            android:text="@string/title_hy_news" />
+        <TextView
+            android:id="@+id/hy_news"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:layout_alignBaseline="@+id/market_comment"
+            android:layout_alignBottom="@+id/market_comment"
+            android:layout_toEndOf="@+id/market_comment"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@drawable/text_color_selector"
+            android:background="@drawable/text_background_selector"
+            android:text="@string/title_tt_news" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="-1dp"
+        android:layout_alignBottom="@+id/title_bottom_news"
+        android:background="@color/grayLine" />
+
+
+</LinearLayout>

@@ -1,0 +1,845 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/start_orange</item>
+        <item name="colorPrimaryDark">@color/end_orange</item>
+        <item name="colorAccent">@color/orangeTab</item>
+        <!--<item name="windowBackground">@drawable/gradient_orange_background</item>-->
+    </style>
+
+    <style name="AppLaunch" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@mipmap/guide</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- no action bar -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <item name="toolbarStyle">@style/ClubToolbar</item>
+    </style>
+
+    <!-- toolbar set contentInsetStart = 0dp (default 16dp)  解决toolbar 开头空隙问题-->
+    <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+    </style>
+    <!-- toolbar add it to AppTheme -->
+
+    <style name="WeightAttr">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blackText</item>
+    </style>
+
+    <!-- homepage bottom news -->
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/background_selected_true</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabTextColor">@color/text_black_title</item>
+        <item name="tabSelectedTextColor">#f56607</item>
+        <item name="tabMode">fixed</item>
+    </style>
+
+
+    <!-- deal text-->
+    <style name="DealTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/blackText3</item>
+    </style>
+
+    <style name="DealSpecBoldTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/blackText</item>
+    </style>
+
+
+    <!-- 开票信息 title  -->
+    <style name="InvoiceTitleTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/blackText2</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+    </style>
+
+    <style name="InvoiceTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/blackText</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+    </style>
+
+
+    <style name="NormalTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText2</item>
+    </style>
+
+    <style name="DealBoldTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blackText</item>
+    </style>
+
+    <style name="DealOrangeTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/orangeTab</item>
+    </style>
+
+    <!-- activity_info_day & item_info_day; a_detail; a_more; a_price_inquiry; item_home_deal_header & hw24 & recommend & title_bottom_news; item_message; -->
+    <style name="TitleTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <style name="PerCTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blackText</item>
+    </style>
+
+
+    <!-- news detail grey text -->
+    <!--<style name="GreyTextStyle" parent="TextAppearance.AppCompat">-->
+        <!--<item name="android:gravity">center</item>-->
+        <!--<item name="android:textSize">14sp</item>-->
+        <!--<item name="android:textColor">@color/blackText4</item>-->
+    <!--</style>-->
+
+    <!-- mood index -->
+    <style name="IndexTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText</item>
+    </style>
+    <!-- home page 5 tabs  -->
+    <style name="GvMenuTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText2</item>
+    </style>
+
+    <!-- info day item  header : date text -->
+    <style name="TitleTextGreyStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/blackText4</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <!-- client detail information -->
+
+    <style name="ClientDetailLinearStyle" parent="Base.Theme.AppCompat">
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ClientDetailTitleTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">left</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:textColor">@color/blackText</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="ClientDetailTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/blackText4</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    <style name="ClientDetailSwitchStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/orangeTab</item>
+    </style>
+
+    <!-- 查价格 菜单栏 字体： 黑 - 橙; 背景 ：下箭头-grey - 上箭头-orange -->
+    <style name="RadioWhiteMenuStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/checkable_black_orange_text</item>
+        <item name="android:checked">false</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:drawableRight">@drawable/pull_down_up_orange</item>
+    </style>
+
+    <!--  买原料菜单栏  字体： 白 - 粗白; 背景 ：下箭头 - 上箭头 -->
+    <style name="RadioMenuStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/checkable_white_bold_text</item>
+        <item name="android:checked">false</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:drawableRight">@drawable/pull_down_up</item>
+    </style>
+
+
+    <!-- 仓库adapter 字体 -->
+    <style name="WarehouseTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <!--  订单 BREED 字体 -->
+    <style name="BlackTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">left</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <!--  订单 BRAND 字体 -->
+    <style name="GreyTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">left</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText2</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <!--  订单 金额 字体 -->
+    <style name="Right12TextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+    <!--  求购列表 字体 -->
+    <style name="PurchaseTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">left</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <!--  求购列表 状态 字体 -->
+    <style name="PurchaseStatusTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">right</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+
+    <!--  收货地址 字体 -->
+    <style name="AddressTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">left</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <item name="android:layout_marginTop">@dimen/margin_linear_address</item>
+        <item name="android:layout_marginBottom">@dimen/margin_linear_address</item>
+    </style>
+
+    <!-- 指定 文字距离上下 距离 10  black  14sp  gravity:left 发布求购 明细条目 -->
+    <style name="MarginText14LeftStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <item name="android:layout_marginTop">@dimen/margin15_text</item>
+        <item name="android:layout_marginBottom">@dimen/margin15_text</item>
+    </style>
+
+    <!-- 指定 文字距离上下 距离 10  black  12sp  gravity:left -->
+    <style name="MarginTextLeftStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">left</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <item name="android:layout_marginTop">@dimen/margin_text</item>
+        <item name="android:layout_marginBottom">@dimen/margin_text</item>
+    </style>
+    <!-- 指定 文字距离上下 距离 10  black  12sp  gravity:right -->
+    <style name="MarginTextRightStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">right</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <item name="android:layout_marginTop">@dimen/margin_text</item>
+        <item name="android:layout_marginBottom">@dimen/margin_text</item>
+    </style>
+
+    <!-- 标题 橙色下划线  指定 文字距离上下 距离 10  black  12sp  gravity:right -->
+    <style name="MarginTitleTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">left</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <item name="android:layout_marginTop">@dimen/margin_text</item>
+        <item name="android:layout_marginBottom">@dimen/margin_text</item>
+        <item name="android:background">@drawable/underline_orange_title</item>
+    </style>
+
+
+
+
+
+
+    <!--  报价详情 小标题 字体 -->
+    <style name="QuoteDetailTitleTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <item name="android:background">@drawable/underline_orange_title</item>
+    </style>
+
+    <!--  报价详情 字体 -->
+    <style name="QuoteDetailTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">left</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <item name="android:layout_marginTop">@dimen/margin_linear_quote</item>
+        <item name="android:layout_marginBottom">@dimen/margin_linear_quote</item>
+    </style>
+
+    <!--  报价详情 状态 字体 -->
+    <style name="QuoteDetailStatusTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">right</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <item name="android:layout_marginTop">@dimen/margin_linear_quote</item>
+        <item name="android:layout_marginBottom">@dimen/margin_linear_quote</item>
+    </style>
+
+    <!--  报价详情 check box 选择是否 供方提供配送-->
+    <style name="CheckBoxStyle" parent="TextAppearance.AppCompat">
+        <item name="android:button">@null</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/check_box_bg</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:checked">false</item>
+    </style>
+
+    <!--  收藏 star 查价格; 新闻详情;-->
+    <style name="CheckBoxStarStyle" parent="TextAppearance.AppCompat">
+        <item name="android:button">@null</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/check_star_bg</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:checked">false</item>
+    </style>
+
+
+
+    <!-- table text -->
+    <!-- 使用原料 标题 -->
+    <style name="TableTitleStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:paddingLeft">@dimen/grid_padding_right</item>
+        <item name="android:paddingRight">@dimen/grid_padding_right</item>
+        <item name="android:paddingTop">@dimen/grid_padding_top</item>
+        <item name="android:paddingBottom">@dimen/grid_padding_top</item>
+        <item name="android:background">@drawable/grid_title_bg</item>
+    </style>
+
+
+
+
+    <!-- 标题 上边框 orange -->
+    <style name="TableTitleTopStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:paddingLeft">@dimen/grid_padding_right</item>
+        <item name="android:paddingRight">@dimen/grid_padding_right</item>
+        <item name="android:paddingTop">@dimen/grid_padding_top</item>
+        <item name="android:paddingBottom">@dimen/grid_padding_top</item>
+        <!--<item name="android:background">@drawable/grid_title_top_bg</item>-->
+        <item name="android:background">@drawable/grid_grey_top_bg</item>
+    </style>
+
+    <!-- 标题 上 左 边框 orange -->
+    <style name="TableTitleTopLeftStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:paddingLeft">@dimen/grid_padding_right</item>
+        <item name="android:paddingRight">@dimen/grid_padding_right</item>
+        <item name="android:paddingTop">@dimen/grid_padding_top</item>
+        <item name="android:paddingBottom">@dimen/grid_padding_top</item>
+        <item name="android:background">@drawable/grid_title_top_left_bg</item>
+    </style>
+
+    <!-- 标题 上 右 边框 orange -->
+    <style name="TableTitleTopRightStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:paddingLeft">@dimen/grid_padding_right</item>
+        <item name="android:paddingRight">@dimen/grid_padding_right</item>
+        <item name="android:paddingTop">@dimen/grid_padding_top</item>
+        <item name="android:paddingBottom">@dimen/grid_padding_top</item>
+        <item name="android:background">@drawable/grid_title_top_right_bg</item>
+    </style>
+
+
+
+    <!-- 设备清单 标题 -->
+    <style name="TableTitleStyle1" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">@dimen/grid_padding_right</item>
+        <item name="android:paddingRight">@dimen/grid_padding_right</item>
+        <item name="android:paddingTop">@dimen/grid_padding_top</item>
+        <item name="android:paddingBottom">@dimen/grid_padding_top</item>
+        <item name="android:background">@drawable/grid_title_bg</item>
+    </style>
+
+    <!-- 表格 内容 靠左 -->
+    <style name="TableStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/blackText2</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">@dimen/grid_padding_right</item>
+        <item name="android:paddingRight">@dimen/grid_padding_right</item>
+        <item name="android:paddingTop">@dimen/grid_padding_top</item>
+        <item name="android:paddingBottom">@dimen/grid_padding_top</item>
+        <item name="android:background">@drawable/grid_blank_bg</item>
+    </style>
+
+    <!-- 表格 内容 居中 -->
+    <style name="TableStyle1" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/blackText2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">@dimen/grid_padding_right</item>
+        <item name="android:paddingRight">@dimen/grid_padding_right</item>
+        <item name="android:paddingTop">@dimen/grid_padding_top</item>
+        <item name="android:paddingBottom">@dimen/grid_padding_top</item>
+        <item name="android:background">@drawable/grid_blank_bg</item>
+    </style>
+
+    <!-- 表格 内容 居中 加粗 -->
+    <style name="TableBoldStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/blackText2</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">@dimen/grid_padding_right</item>
+        <item name="android:paddingRight">@dimen/grid_padding_right</item>
+        <item name="android:paddingTop">@dimen/grid_padding_top</item>
+        <item name="android:paddingBottom">@dimen/grid_padding_top</item>
+        <item name="android:background">@drawable/grid_blank_bg</item>
+    </style>
+
+
+
+    <!-- client filter all default -->
+    <style name="CommonTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blackText3</item>
+
+    </style><style name="SelectedTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/whiteBackground</item>
+    </style>
+
+    <!-- material purchase title-->
+    <style name="TitleText18Style" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/blackText</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+    <!--<style name="TitleText20Style" parent="TextAppearance.AppCompat">-->
+        <!--<item name="android:gravity">center</item>-->
+        <!--<item name="android:textSize">20sp</item>-->
+        <!--<item name="android:textColor">@color/blackText</item>-->
+        <!--<item name="android:textStyle">bold</item>-->
+    <!--</style>-->
+
+    <style name="HintTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">left</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText4</item>
+    </style>
+
+    <!-- 背景在文字正下方 文字在中央 单选标签 （例“我要反馈”）-->
+    <style name="RadioLabelStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_checkable_wo</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/radio_label_bg</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+
+    <!-- 看资讯 标题 item_title -->
+    <style name="CheckableTitleStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">13sp</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:textColor">@color/color_checkable_title_text</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/checkable_title_bg</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:checked">false</item>
+    </style>
+
+    <!-- 买原料 - 菜单栏选项卡 -->
+    <style name="CheckLabelMenuStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_checkable_text</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/check_waterfall_bg</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <!-- 背景在文字正下方 文字在中央 多选标签（例：“申请额度-step3”; 交易记录 - 开发票; 买原料 - 菜单栏选项卡） -->
+    <style name="CheckLabelStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_checkable_text</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/check_waterfall_bg</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:checked">false</item>
+    </style>
+
+    <!--背景在文字正下方 文字在中央 首页 - 今日成交 - 关注-->
+    <style name="AttentionCheckStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/color_text_attention</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/check_bg_attention</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+     <!--背景在文字正下方 文字在中央 -->
+    <style name="CheckStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_checkable_text</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/check_bg</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:checked">true</item>
+    </style>
+
+
+    <!-- seek Clients ： potential & followed  -->
+    <style name="RadioNoImageStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/client_checkable_text</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">@drawable/checkable_bg</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <!-- seek clients - filter - more  注册资本、 注册时间卡片选择 未选中时 字体为黑色 -->
+    <style name="RadioNoImageBlackStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_checkable_text</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">@drawable/check_waterfall_bg</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+
+
+    <!-- 鸿网app 会员权益 卡片选择1 -->
+    <style name="RadioImageBgStyle1" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/b_w_checkable_text</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">@drawable/checkable_bg1</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <!-- 鸿网app 会员权益 卡片选择2 -->
+    <style name="RadioImageBgStyle2" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/b_w_checkable_text</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">@drawable/checkable_bg2</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <!-- 鸿网app 会员权益 卡片选择3 -->
+    <style name="RadioImageBgStyle3" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/b_w_checkable_text</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">@drawable/checkable_bg3</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <!-- two icons and text : ali pay & we_chat pay -->
+    <style name="RadioImageStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/blackText2</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:drawableRight">@drawable/radio_check</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="RadioStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blackText2</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawableLeft">@drawable/radio</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="RadioStyle1" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blackText2</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawableLeft">@drawable/pull2</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <!-- check button ex: accept EULA-->
+    <style name="RadioStyle2" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/blackText4</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawableLeft">@drawable/radio_check</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+
+    <!--  求购 标题 CheckBox -->
+    <style name="CheckableToolbarStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/checkable_white_bold_text</item>
+        <item name="android:checked">false</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableRight">@drawable/triangle_white_down_up</item>
+    </style>
+
+
+    <!--  求购 点击标题 出现模糊背景的 RadioButton -->
+    <style name="FuzzyRadioMenuStyle" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/checkable_black_orange_text</item>
+        <item name="android:checked">false</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@drawable/grey_rect_background</item>
+    </style>
+
+
+
+
+
+
+
+
+    <style name="smallButtonTextStyle">
+        <item name="android:fontFamily">Helvetica Neue LT W1G 45 Light</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:spacing">20dp</item>
+    </style>
+    <style name="DialogButtonText" parent="@style/smallButtonTextStyle">
+        <item name="android:buttonStyle">?android:attr/borderlessButtonStyle</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_height">@dimen/dialog_button_height</item>
+    </style>
+
+
+    <style name="SlimDialog" parent="AlertDialog.AppCompat">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="AppDialog.Light" parent="SlimDialog">
+        <item name="dialogBackground">@color/whiteBackground</item>
+        <item name="titleColor">@color/near_black</item>
+        <item name="messageColor">@color/blackText3</item>
+        <item name="buttonBackground">@drawable/slim_button_regular_light_background</item>
+        <item name="buttonTextColor">@color/slim_button_regular_light_text_color</item>
+        <item name="vividButtonBackground">@drawable/slim_button_vivid_light_background</item>
+        <item name="vividButtonTextColor">@color/slim_button_vivid_light_text_color</item>
+        <item name="dialogBorder">@dimen/dialog_light_border_stroke_width</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--模糊-->
+
+    </style>
+
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+
+
+
+</resources>

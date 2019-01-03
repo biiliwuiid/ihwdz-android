@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/home_header_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:background="@color/whiteBackground"
+    android:paddingTop="6dp"
+    android:paddingBottom="0dp"
+    android:paddingRight="16dp">
+
+    <ImageView
+        android:layout_marginTop="@dimen/margin_top_orange_line"
+        android:layout_marginLeft="@dimen/margin_left_orange_line"
+        android:layout_marginRight="@dimen/margin_right_orange_line"
+        android:layout_marginBottom="@dimen/margin_bottom_orange_line"
+        android:layout_width="16dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_vertical_line_black_24dp"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_weight="5"
+        android:id="@+id/title"
+        android:gravity="left"
+        android:text="@string/deal_title"
+        style="@style/TitleTextStyle"
+        />
+    <TextView
+        android:id="@+id/item_header_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_weight="4"
+        android:gravity="right"
+        android:textColor="@color/orangeTab"
+        android:text="@string/deal_date"
+        android:textSize="12sp" />
+</LinearLayout>

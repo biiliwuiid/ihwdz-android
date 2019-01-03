@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24dp"
+        android:height="40dp"
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0">
+
+    <!--
+        android:width="24dp"
+        android:height="24dp"
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0"-->
+    <!--<path-->
+        <!--android:fillColor="#FF000000"-->
+        <!--android:pathData="M12,19m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>-->
+    <path
+        android:fillColor="#f16a03"
+        android:pathData="M10,1h5v22h-5z"/>
+    <!--
+    1h4v18h 比 2h4v18h 上端更靠上
+    1h4v22h 比 1h4v18h 下端更靠下
+    5v -5v 比 4v -4z 更宽
+    -->
+</vector>

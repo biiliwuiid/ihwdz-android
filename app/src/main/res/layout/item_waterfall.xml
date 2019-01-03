@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/whiteBackground"
+    android:gravity="center">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="@dimen/item_check_width"
+        android:layout_height="@dimen/item_check_height"
+        style="@style/CheckLabelStyle"
+        android:text="汽车配件"
+        />
+
+
+</RelativeLayout>

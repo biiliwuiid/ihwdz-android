@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyBackground"
+    android:orientation="vertical"
+    tools:context="com.ihwdz.android.hwapp.ui.me.infovip.searchadmin.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_orange_background"
+        android:clipChildren="true"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingRight="6dp"
+            android:paddingLeft="6dp"
+            android:background="@drawable/rect_search_background">
+            <View
+                android:id="@+id/view_for_focus"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_search"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/search"/>-->
+
+            <com.ihwdz.android.hwapp.widget.CleanableEditText
+                android:id="@+id/editText"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:layout_marginLeft="0dp"
+                android:singleLine="true"
+                android:textSize="@dimen/title_size_4_ma"
+                android:textColor="@color/blackText3"
+                android:hint="@string/search"/>
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_delete"-->
+                <!--android:layout_width="10dp"-->
+                <!--android:layout_height="10dp"-->
+                <!--android:background="@drawable/circle_grey"-->
+                <!--android:src="@drawable/delete"-->
+                <!--android:scaleType="center" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="@string/cancel"
+            android:textColor="@color/whiteBackground"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recyclerView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+
+    <!-- add for fuzzy search recycler view -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/layout_fuzzy_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_fuzzy_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteBackground" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/greyFuzzy" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

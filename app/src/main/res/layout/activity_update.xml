@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyBackground"
+    tools:context="com.ihwdz.android.hwapp.ui.home.clientseek.vipupdate.UpdateActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/base_title_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteBackground"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/blackText"
+                android:text="@string/remind_up"/>
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/bt_1"
+                    android:layout_width="@dimen/width_vip_card"
+                    android:layout_height="@dimen/height_vip_card"
+                    android:layout_weight="1"
+                    style="@style/RadioImageBgStyle1"
+                    android:text="喜鹊\n\n\n xxxx\n\n\n xxxx" />
+
+                <RadioButton
+                    android:id="@+id/bt_2"
+                    android:layout_width="@dimen/width_vip_card"
+                    android:layout_height="@dimen/height_vip_card"
+                    android:layout_weight="1"
+                    style="@style/RadioImageBgStyle2"
+                    android:text="凤凰\n\n\n xxxx\n\n\n xxxx"/>
+
+                <RadioButton
+                    android:id="@+id/bt_3"
+                    android:layout_width="@dimen/width_vip_card"
+                    android:layout_height="@dimen/height_vip_card"
+                    android:layout_weight="1"
+                    style="@style/RadioImageBgStyle3"
+                    android:text="麻雀\n\n\n xxxx\n\n\n xxxx"/>
+
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/linear_card2"
+                    android:background="@drawable/card"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="麻雀"
+                        android:gravity="center"
+                        android:textColor="@color/blackText"
+                        android:textSize="12sp"
+                        />
+                    <TextView
+                        android:id="@+id/price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="￥120"
+                        android:gravity="center"
+                        android:textColor="@color/orangeTab"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/days1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="12个月"
+                        android:gravity="center"
+                        android:textColor="@color/blackText"
+                        android:textSize="12sp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_card2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/gold_vip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="凤凰"
+                        android:gravity="center"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:id="@+id/price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="￥360"
+                        android:gravity="center"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/days2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="12个月"
+                        android:gravity="center"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="13sp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/linear_card2"
+                    android:background="@drawable/card"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="麻雀"
+                        android:gravity="center"
+                        android:textColor="@color/blackText"
+                        android:textSize="12sp"
+                        />
+                    <TextView
+                        android:id="@+id/price3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="￥120"
+                        android:gravity="center"
+                        android:textColor="@color/orangeTab"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/days3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="12个月"
+                        android:gravity="center"
+                        android:textColor="@color/blackText"
+                        android:textSize="12sp"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/whiteBackground"
+            android:paddingTop="@dimen/padding_top_up"
+            android:paddingBottom="@dimen/padding_bottom_up"
+            android:paddingRight="@dimen/padding_right_up"
+            android:paddingLeft="@dimen/padding_left_up"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/blackText"
+                android:text="@string/vip_right_up"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vip_rights"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/whiteBackground"
+            android:paddingTop="@dimen/padding_top_up"
+            android:paddingBottom="@dimen/padding_bottom_up"
+            android:paddingRight="@dimen/padding_right_up"
+            android:paddingLeft="@dimen/padding_left_up"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/blackText"
+                android:text="@string/pay_up"/>
+
+            <RadioGroup
+                android:id="@+id/radio_group_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/bt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/RadioImageStyle"
+                    android:drawableLeft="@drawable/ali_pay"
+                    android:text="支付宝支付"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/grayLineDarker"/>
+                <RadioButton
+                    android:id="@+id/bt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/RadioImageStyle"
+                    android:drawableLeft="@drawable/wechat_pay"
+                    android:text="微信支付"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/bt_vip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gradient_orange_oval_background"
+                android:textColor="@color/whiteBackground"
+                android:text="@string/update_vip_now"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

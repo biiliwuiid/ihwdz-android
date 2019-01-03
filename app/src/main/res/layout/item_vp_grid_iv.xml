@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_layout"
+    android:foreground="?android:attr/selectableItemBackground"
+   >
+    <!-- 首页　五大模块：查价格；每日讯；看指数；找客户；买原料　-->
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/GvMenuTextStyle"
+            android:gravity="center"
+            android:text="查价格"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_title_menu"
+        android:visibility="gone"
+        android:layout_width="@dimen/msg_height_info"
+        android:layout_height="@dimen/msg_height_info"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/msg_margin_right_info"
+        android:layout_marginTop="@dimen/msg_margin_top_info"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:id="@+id/msg_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/whiteBackground"
+            android:text="26"
+            android:textSize="10sp"
+            android:background="@drawable/circle_red"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

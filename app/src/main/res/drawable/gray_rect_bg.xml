@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- with 1dp -> 1px 不根据机型改变-->
+    <solid
+        android:width="1px"
+        android:color="@color/grayLine" />
+    <corners android:radius="0dp" />
+    <padding
+        android:bottom="3dp"
+        android:left="3dp"
+        android:right="3dp"
+        android:top="3dp" />
+</shape>
+<!-- 选择仓库 历史搜索 -->

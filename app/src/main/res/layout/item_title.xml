@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:paddingLeft="16dp"
+    android:background="@color/whiteBackground">
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="市场风云"
+        style="@style/CheckableTitleStyle" />
+</LinearLayout>

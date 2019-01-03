@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/greyBackground"
+    tools:context="com.ihwdz.android.hwapp.ui.orders.logistics.LogisticActivity">
+
+
+    <include
+        layout="@layout/base_title_bar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/banner_logistics"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/whiteBackground"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <TextView
+            android:id="@+id/tv_city_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:textColor="@color/blackText3"
+            android:text="上海市/市辖区"/>
+
+        <TextView
+            android:id="@+id/tv_city_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:textColor="@color/blackText3"
+            android:text="江苏省/无锡市"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/whiteBackground"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <TextView
+            android:id="@+id/tv_area_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/blackText"
+            android:text="奉贤区"/>
+
+        <ImageView
+            android:id="@+id/iv_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/switch_logistics"/>
+        <TextView
+            android:id="@+id/tv_area_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/blackText"
+            android:text="南长区"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <RelativeLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_apply_step2"
+        android:clickable="true"
+        android:background="@color/whiteBackground">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/item_padding_step2"
+            android:text="@string/amount_logistics"
+            />
+
+        <EditText
+            android:id="@+id/edit_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="@dimen/item_hint_padding"
+            android:background="@null"
+            style="@style/HintTextStyle"
+            android:gravity="right"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:hint="@string/unit"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/gradient_orange_oval_background"
+        android:textColor="@color/whiteBackground"
+        android:text="@string/query"/>
+
+
+</LinearLayout>

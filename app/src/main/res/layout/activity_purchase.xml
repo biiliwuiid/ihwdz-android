@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/greyBackground"
+    tools:context="com.ihwdz.android.hwapp.ui.publish.purchase.PurchaseActivity">
+
+    <include
+        layout="@layout/base_title_bar"/>
+
+    <!-- 收货 信息 -->
+    <LinearLayout
+        android:id="@+id/linear_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="16dp"
+        android:background="@color/whiteBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:orientation="vertical">
+            <!-- 收货信息 -->
+            <LinearLayout
+                android:id="@+id/linear_mobile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="16dp"
+                android:background="@color/whiteBackground">
+                <TextView
+                    android:id="@+id/tv_order_receiver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_receiver"
+                    style="@style/QuoteDetailTextStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13978500000"
+                    style="@style/QuoteDetailStatusTextStyle"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_address"
+                android:lineSpacingMultiplier="1.3"
+                style="@style/QuoteDetailTextStyle"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_arrow_right"
+            android:src="@drawable/enter"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <!-- 产品明细 父容器 -->
+    <FrameLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:id="@+id/scroll_view"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/linear_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <!-- 增加明细 -->
+                <RelativeLayout
+                    android:id="@+id/linear5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/whiteBackground">
+                    <LinearLayout
+                        android:id="@+id/linear_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:clickable="true"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/add"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/orangeTab"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="6dp"
+                            android:text="@string/add_product"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_button_big"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/gradient_orange_oval_background"
+                    android:textColor="@color/whiteBackground"
+                    android:text="@string/submit" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+
+</LinearLayout>

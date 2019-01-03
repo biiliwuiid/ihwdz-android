@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipChildren="true"
+    tools:context="com.ihwdz.android.hwapp.ui.home.materialpurchase.MaterialActivity">
+    <include
+        layout="@layout/base_title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_orange_background"
+        android:clipChildren="true"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--<LinearLayout-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingRight="6dp"-->
+            <!--android:paddingLeft="6dp"-->
+            <!--android:background="@drawable/oval_search_background">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/iv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/search"/>-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/editText"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:background="@null"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:singleLine="true"-->
+                <!--android:textSize="@dimen/title_size_4_ma"-->
+                <!--android:textColor="@color/blackText3"-->
+                <!--android:hint="@string/search_ma"/>-->
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingRight="6dp"
+            android:paddingLeft="6dp"
+            android:background="@drawable/oval_search_background">
+            <View
+                android:id="@+id/view_for_focus"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <com.ihwdz.android.hwapp.widget.CleanableEditText
+                android:id="@+id/editText"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:layout_marginLeft="0dp"
+                android:singleLine="true"
+                android:imeOptions="actionSend"
+                android:maxLines="1"
+                android:textSize="@dimen/title_size_4_ma"
+                android:textColor="@color/blackText3"
+                android:hint="@string/search_ma"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:orientation="vertical"
+        android:background="@drawable/gradient_orange_background"
+        android:paddingRight="0dp"
+        android:paddingLeft="0dp"
+        android:gravity="center_vertical">
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <com.ihwdz.android.hwapp.widget.ToggleRadioButton
+                android:id="@+id/radio1"
+                android:layout_width="@dimen/item_check_width"
+                android:layout_height="@dimen/item_check_height"
+                android:clickable="true"
+                android:text="@string/breed_ma"
+                style="@style/RadioMenuStyle"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/line_padding_top_title"
+                android:layout_marginBottom="@dimen/line_padding_top_title"
+                android:background="@color/grayLine" />
+            <com.ihwdz.android.hwapp.widget.ToggleRadioButton
+                android:id="@+id/radio2"
+                android:layout_width="@dimen/item_check_width"
+                android:layout_height="@dimen/item_check_height"
+                android:text="@string/spec_ma"
+                style="@style/RadioMenuStyle"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/line_padding_top_title"
+                android:layout_marginBottom="@dimen/line_padding_top_title"
+                android:background="@color/grayLine" />
+            <com.ihwdz.android.hwapp.widget.ToggleRadioButton
+                android:id="@+id/radio3"
+                android:layout_width="@dimen/item_check_width"
+                android:layout_height="@dimen/item_check_height"
+                android:text="@string/city_ma"
+                style="@style/RadioMenuStyle"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/line_padding_top_title"
+                android:layout_marginBottom="@dimen/line_padding_top_title"
+                android:background="@color/grayLine" />
+            <com.ihwdz.android.hwapp.widget.ToggleRadioButton
+                android:id="@+id/radio4"
+                android:layout_width="@dimen/item_check_width"
+                android:layout_height="@dimen/item_check_height"
+                android:text="@string/brand_ma"
+                style="@style/RadioMenuStyle"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/title_height"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_left_pull_ma"
+                    android:gravity="center"
+                    android:textColor="@color/whiteBackground"
+                    android:textSize="@dimen/title_size_4_ma"
+                    android:text="@string/breed_ma" />
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:src="@drawable/pull_white"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/line_padding_top_title"
+                android:layout_marginBottom="@dimen/line_padding_top_title"
+                android:background="@color/grayLine" />
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/title_height"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_left_pull_ma"
+                    android:gravity="center"
+                    android:textColor="@color/whiteBackground"
+                    android:textSize="@dimen/title_size_4_ma"
+                    android:text="@string/spec_ma" />
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:src="@drawable/pull_white"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/line_padding_top_title"
+                android:layout_marginBottom="@dimen/line_padding_top_title"
+                android:background="@color/grayLine" />
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/title_height"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_left_pull_ma"
+                    android:gravity="center"
+                    android:textColor="@color/whiteBackground"
+                    android:textSize="@dimen/title_size_4_ma"
+                    android:text="@string/city_ma" />
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:src="@drawable/pull_white"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/line_padding_top_title"
+                android:layout_marginBottom="@dimen/line_padding_top_title"
+                android:background="@color/whiteBackground" />
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/title_height"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_left_pull_ma"
+                    android:gravity="center"
+                    android:textColor="@color/whiteBackground"
+                    android:textSize="@dimen/title_size_4_ma"
+                    android:text="@string/brand_ma" />
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:src="@drawable/pull_white"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/blackText"
+        android:text="@string/empty"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refresher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- 菜单数据 -->
+            <LinearLayout
+                android:id="@+id/layout_fuzzy_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_fuzzy_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/whiteBackground"
+                    android:layout_marginBottom="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/greyFuzzy" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
+
+

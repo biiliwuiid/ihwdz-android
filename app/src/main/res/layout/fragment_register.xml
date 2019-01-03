@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/item_normal_padding"
+    android:background="@color/whiteBackground">
+
+    <RelativeLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_per"
+        android:clickable="true"
+        android:background="@color/whiteBackground">
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:foregroundGravity="center"
+            android:src="@drawable/user"/>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/iv1"
+            android:layout_marginLeft="@dimen/item_icon_padding"
+            android:text="@string/name"
+            style="@style/PerCTextStyle"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/item_hint_padding"
+            android:background="@null"
+            style="@style/HintTextStyle"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:hint="@string/name_hint"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <RelativeLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_per"
+        android:clickable="true"
+        android:background="@color/whiteBackground">
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:foregroundGravity="center"
+            android:src="@drawable/company"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/iv2"
+            android:layout_marginLeft="@dimen/item_icon_padding"
+            android:text="@string/company"
+            style="@style/PerCTextStyle"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/item_hint_padding"
+            style="@style/HintTextStyle"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:singleLine="true"
+            android:hint="@string/company_hint"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <RelativeLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_per"
+        android:clickable="true"
+        android:background="@color/whiteBackground">
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:foregroundGravity="center"
+            android:src="@drawable/telephone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/iv3"
+            android:layout_marginLeft="@dimen/item_icon_padding"
+            android:text="@string/telephone"
+            style="@style/PerCTextStyle"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/item_hint_padding"
+            style="@style/HintTextStyle"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:singleLine="true"
+            android:hint="@string/telephone_hint"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <RelativeLayout
+        android:id="@+id/linear4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_per"
+        android:clickable="true"
+        android:background="@color/whiteBackground">
+        <ImageView
+            android:id="@+id/iv4"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:foregroundGravity="center"
+            android:src="@drawable/verification_code"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/iv4"
+            android:layout_marginLeft="@dimen/item_icon_padding"
+            android:text="@string/verification"
+            style="@style/PerCTextStyle"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/item_hint_padding"
+            style="@style/HintTextStyle"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:singleLine="true"
+            android:hint="@string/verification_hint"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/verification_get"
+            style="@style/HintTextStyle"
+            android:background="@drawable/oval_black_bg"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <RelativeLayout
+        android:id="@+id/linear5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_per"
+        android:clickable="true"
+        android:background="@color/whiteBackground">
+        <ImageView
+            android:id="@+id/iv5"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:foregroundGravity="center"
+            android:src="@drawable/locked"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/iv5"
+            android:layout_marginLeft="@dimen/item_icon_padding"
+            android:text="@string/pwd"
+            style="@style/PerCTextStyle"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/item_hint_padding"
+            style="@style/HintTextStyle"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:singleLine="true"
+            android:hint="@string/pwd_hint"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <LinearLayout
+        android:id="@+id/linear6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_per"
+        android:background="@color/whiteBackground">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_purchaser"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/unselected_circle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/iv_purchaser"
+                android:layout_marginLeft="@dimen/item_icon_padding"
+                android:text="@string/purchaser"
+                style="@style/PerCTextStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_business"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/unselected_circle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/iv_purchaser"
+                android:layout_marginLeft="@dimen/item_icon_padding"
+                android:text="@string/business"
+                style="@style/PerCTextStyle"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <RadioGroup
+        android:id="@+id/type_vip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_per"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/bt_purchaser"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"
+            android:checked="true"
+            android:drawablePadding="8dp"
+            android:textColor="@color/blackText2"
+            android:text="@string/purchaser"/>
+        <RadioButton
+            android:id="@+id/bt_business"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/selected_circle"
+            android:drawablePadding="8dp"
+            android:textColor="@color/blackText2"
+            android:text="@string/business"/>
+
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+
+</LinearLayout>

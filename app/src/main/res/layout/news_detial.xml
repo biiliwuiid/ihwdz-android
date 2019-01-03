@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteBackground"
+    android:clipChildren="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp"
+            android:text="红豆早餐|全球聚乙烯价格战一触即发"
+            android:textSize="18sp"
+            android:textColor="@color/blackText"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/reader"
+                android:src="@drawable/reader"
+                android:scaleType="center"
+                android:layout_gravity="right"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/viewTimes"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                android:text="92"
+                android:textSize="@dimen/item_hw24h_name_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/author"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="author"
+                android:layout_marginLeft="16dp"
+                android:textSize="@dimen/item_hw24h_name_size"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/source"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="@string/source_de"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="@dimen/item_hw24h_name_size"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/date"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="2018-08/31"
+                android:textSize="@dimen/item_hw24h_name_size"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone"/>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/statement"
+            android:layout_marginTop="0dp"
+            android:gravity="left"
+            android:text="@string/statement_de"
+            android:textColor="@color/blackText4"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+

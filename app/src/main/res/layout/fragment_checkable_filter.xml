@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/step3_layout"
+    android:background="@color/whiteBackground"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/blackText"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="@string/link_way_fi"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/link_phone"
+            android:layout_width="@dimen/item_check_width"
+            android:layout_height="@dimen/item_check_height"
+            android:text="@string/phone_fi"
+            style="@style/RadioNoImageBlackStyle"/>
+        <CheckBox
+            android:id="@+id/link_email"
+            android:layout_width="@dimen/item_check_width"
+            android:layout_height="@dimen/item_check_height"
+            android:text="@string/email_fi"
+            style="@style/RadioNoImageBlackStyle"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/recyclerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/title_reg_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/blackText"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="@string/reg_money_fi"/>
+    <com.ihwdz.android.hwapp.widget.MultiLineRadioGroup
+        android:id="@+id/group_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/reg_money100"
+                android:layout_width="@dimen/item_check_width"
+                android:layout_height="@dimen/item_check_height"
+                android:text="@string/money_100"
+                style="@style/RadioNoImageBlackStyle"/>
+            <RadioButton
+                android:id="@+id/reg_money100_200"
+                android:layout_width="@dimen/item_check_width"
+                android:layout_height="@dimen/item_check_height"
+                android:text="@string/money_100_200"
+                style="@style/RadioNoImageBlackStyle"/>
+
+            <RadioButton
+                android:id="@+id/reg_money200_500"
+                android:layout_width="@dimen/item_check_width"
+                android:layout_height="@dimen/item_check_height"
+                android:text="@string/money_200_500"
+                style="@style/RadioNoImageBlackStyle"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <RadioButton
+                android:id="@+id/reg_money500_1000"
+                android:layout_width="@dimen/item_check_width"
+                android:layout_height="@dimen/item_check_height"
+                android:text="@string/money_500_1000"
+                style="@style/RadioNoImageBlackStyle"/>
+            <RadioButton
+                android:id="@+id/reg_money1000"
+                android:layout_width="@dimen/item_check_width"
+                android:layout_height="@dimen/item_check_height"
+                android:text="@string/money_1000"
+                style="@style/RadioNoImageBlackStyle"/>
+
+        </LinearLayout>
+
+    </com.ihwdz.android.hwapp.widget.MultiLineRadioGroup>
+
+
+    <TextView
+        android:id="@+id/title_reg_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/blackText"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="@string/reg_date_fi"/>
+    <com.ihwdz.android.hwapp.widget.MultiLineRadioGroup
+        android:id="@+id/group_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/reg_date1"
+                android:layout_width="@dimen/item_check_width"
+                android:layout_height="@dimen/item_check_height"
+                android:text="@string/date_1"
+                style="@style/RadioNoImageBlackStyle"/>
+            <RadioButton
+                android:id="@+id/reg_date1_5"
+                android:layout_width="@dimen/item_check_width"
+                android:layout_height="@dimen/item_check_height"
+                android:text="@string/date_1_5"
+                style="@style/RadioNoImageBlackStyle"/>
+
+            <RadioButton
+                android:id="@+id/reg_date5_10"
+                android:layout_width="@dimen/item_check_width"
+                android:layout_height="@dimen/item_check_height"
+                android:text="@string/date_5_10"
+                style="@style/RadioNoImageBlackStyle"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <RadioButton
+                android:id="@+id/reg_date10_15"
+                android:layout_width="@dimen/item_check_width"
+                android:layout_height="@dimen/item_check_height"
+                android:text="@string/date_10_15"
+                style="@style/RadioNoImageBlackStyle"/>
+            <RadioButton
+                android:id="@+id/reg_date15"
+                android:layout_width="@dimen/item_check_width"
+                android:layout_height="@dimen/item_check_height"
+                android:text="@string/date_15"
+                style="@style/RadioNoImageBlackStyle"/>
+
+        </LinearLayout>
+
+    </com.ihwdz.android.hwapp.widget.MultiLineRadioGroup>
+
+</LinearLayout>

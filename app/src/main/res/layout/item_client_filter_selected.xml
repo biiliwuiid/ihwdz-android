@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_orange_background_small"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:padding="1dp"
+    android:layout_marginLeft="6dp"
+    >
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_cl"
+        android:layout_marginTop="@dimen/margin_cl"
+        android:layout_marginRight="@dimen/margin_cl"
+        android:text="上海"
+        android:textColor="@color/whiteBackground"
+        android:textSize="12sp"/>
+    <ImageView
+        android:layout_width="@dimen/margin_cl"
+        android:layout_height="@dimen/margin_cl"
+        android:layout_marginTop="-7dp"
+        android:layout_marginLeft="-7dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="right"
+        android:src="@drawable/delete"/>
+
+</LinearLayout>
+

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/blackText2"
+            android:textSize="12sp"
+            android:text="待确认收货"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="@dimen/item_check_width"
+            android:layout_height="@dimen/item_check_height"
+            android:layout_alignParentLeft="true"
+            style="@style/CheckLabelStyle"
+            android:textSize="12sp"
+            android:text="开发票"
+            />
+
+        <TextView
+            android:id="@+id/tv_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:text="￥105100.00"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/grey_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/greyBackground" />
+
+
+</LinearLayout>

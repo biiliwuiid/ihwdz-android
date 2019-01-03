@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ihwdz.android.hwapp.ui.me.dealvip.deposit.DepositActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <LinearLayout
+        android:id="@+id/linear_deposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/currency"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/blackText4"
+            android:textSize="13sp"
+            android:text="@string/deposit_mine"/>
+
+        <TextView
+            android:id="@+id/tv_deposit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/blackText"
+            android:textSize="20sp"
+            android:text="￥9000.00"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_deposit_refund"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_deposit_refund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/check"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_refund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/scroll_words_red"
+                android:textSize="20sp"
+                android:text="9000.00"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/blackText"
+                android:textSize="18sp"
+                android:text="@string/refund_success"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/blackText4"
+            android:textSize="13sp"
+            android:text="@string/refund_pay"/>
+
+    </LinearLayout>
+
+    <!-- 我要退保证金/ 完成 -->
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/gradient_orange_oval_background"
+        android:textColor="@color/whiteBackground"
+        android:text="@string/deposit_refund" />
+
+
+</LinearLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/greyBackground"
+    tools:context="com.ihwdz.android.hwapp.ui.orders.query.QueryResultActivity">
+
+    <include
+        layout="@layout/base_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:background="@color/whiteBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <TextView
+                android:id="@+id/tv_city_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:textColor="@color/blackText4"
+                android:text="上海市/市辖区"/>
+
+            <TextView
+                android:id="@+id/tv_city_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:textColor="@color/blackText4"
+                android:text="江苏省/无锡市"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp">
+            <TextView
+                android:id="@+id/tv_area_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/blackText"
+                android:text="奉贤区"/>
+
+            <TextView
+                android:id="@+id/tv_area_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/blackText"
+                android:text="南长区"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/progress_line"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/orangeTab"
+            android:text="@string/insurance_logistics"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/greyBackground"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteBackground"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/blackText"
+            android:text="@string/price_logistics"/>
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/blackText2"
+            android:text="@string/marketPrice"/>
+        <TextView
+            android:id="@+id/tv_marketPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="12sp"
+            android:textColor="@color/blackText"
+            android:text="@string/price_l"/>
+        <TextView
+            android:id="@+id/tv_logistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="right"
+            android:textSize="12sp"
+            android:textColor="@color/blackText2"
+            android:text="@string/aokaiPrice"/>
+
+        <TextView
+            android:id="@+id/tv_aokaiPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="12sp"
+            android:textColor="@color/orangeTab"
+            android:text="@string/price_l"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteBackground"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/blackText"
+            android:text="@string/contact_logistics"/>
+
+        <TextView
+            android:id="@+id/tv_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/blackText4"
+            android:text="contact name"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteBackground"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/blackText"
+            android:text="@string/telephone_logistics"/>
+
+        <TextView
+            android:id="@+id/tv_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/orangeTab"
+            android:text="13321855936"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteBackground"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/blackText"
+            android:text="@string/company_name_logistics"/>
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/blackText4"
+            android:text="company name"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyBackground"
+    android:orientation="vertical"
+    android:clipChildren="true"
+    tools:context="com.ihwdz.android.hwapp.ui.me.dealvip.apply.QuotaActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_orange_height"
+        android:background="@drawable/gradient_orange_background"
+        android:orientation="vertical"
+        />
+
+    <!-- apply result -->
+    <LinearLayout
+        android:id="@+id/linear_quota"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/quota_height"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/quota_margin_top"
+        android:background="@drawable/bg_quota"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible"
+        >
+        <!-- apply complete -->
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="visible"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/blackText2"
+                android:textSize="@dimen/quota_text_big3"
+                android:text="@string/credit_limit"/>
+
+            <TextView
+                android:id="@+id/tv_credit_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/light_orange2"
+                android:textSize="@dimen/quota_text_big3"
+                android:text="@string/credit_limit_number"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:textSize="@dimen/quota_text_normal"
+                        android:textColor="@color/blackText2"
+                        android:text="@string/limit_used"/>
+                    <TextView
+                        android:id="@+id/tv_limit_used"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:textSize="@dimen/quota_text_big3"
+                        android:textColor="@color/start_orange"
+                        android:text="@string/limit_used_number"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:textSize="@dimen/quota_text_normal"
+                        android:textColor="@color/blackText2"
+                        android:text="@string/limit_available"/>
+                    <TextView
+                        android:id="@+id/tv_limit_available"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:textSize="@dimen/quota_text_big3"
+                        android:textColor="@color/start_orange"
+                        android:text="@string/limit_available_number"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="toolbar_height">50dp</dimen>
+    <dimen name="toolbar_title_size">18sp</dimen>
+
+
+    <!-- 表格 -->
+    <dimen name="grid_border">1px</dimen>
+    <dimen name="grid_border_offset">-1px</dimen>
+
+    <dimen name="grid_padding_right">5dp</dimen>
+    <dimen name="grid_padding_top">8dp</dimen>
+
+
+    <!-- big button -->
+    <dimen name="height_button_big">50dp</dimen>
+
+
+    <dimen name="width_checkbox">40dp</dimen>
+    <dimen name="height_checkbox">25dp</dimen>
+
+    <!-- enter箭头距离其左侧 文字的距离 -->
+    <dimen name="margin_arrow_right">10dp</dimen>
+
+
+
+
+    <dimen name="margin_top_orange_line">0dp</dimen>
+    <dimen name="margin_right_orange_line">0dp</dimen>
+    <dimen name="margin_left_orange_line">-8dp</dimen>
+    <dimen name="margin_bottom_orange_line">0dp</dimen>
+
+    <!-- text size -->
+    <dimen name="text_title">18sp</dimen>
+    <dimen name="text_content">14sp</dimen>
+    <dimen name="text_content_grey">12sp</dimen>
+
+    <!-- Dialog Style -->
+    <dimen name="dialog_width">222dp</dimen>
+    <dimen name="dialog_min_height">145dp</dimen>
+    <!--<dimen name="dialog_min_height">173dp</dimen>-->
+    <dimen name="dialog_light_border_stroke_width">0dp</dimen>
+    <dimen name="dialog_dark_border_stroke_width">1dp</dimen>
+    <dimen name="dialog_button_height">36dp</dimen>
+
+    <!-- the distance between orange line and title -->
+    <dimen name="margin_top">16dp</dimen>
+    <dimen name="margin_left">6dp</dimen>
+
+
+    <dimen name="home_header_height">50dp</dimen>
+    <dimen name="home_header_size">16sp</dimen>
+
+    <dimen name="padding_top_header">6dp</dimen>
+    <dimen name="padding_right_header">16dp</dimen>
+    <dimen name="padding_left_header">0dp</dimen>
+    <dimen name="padding_bottom_header">6dp</dimen>
+
+    <dimen name="padding_top_item">6dp</dimen>
+    <dimen name="padding_left_item">16dp</dimen>
+    <dimen name="padding_right_item">16dp</dimen>
+    <dimen name="padding_bottom_item">6dp</dimen>
+    <!-- deal cards -->
+
+    <dimen name="arrow_margin">5dp</dimen>
+
+    <dimen name="padding_top_item_deal">10dp</dimen>
+    <dimen name="padding_left_item_deal">16dp</dimen>
+    <dimen name="padding_right_item_deal">16dp</dimen>
+    <dimen name="padding_bottom_item_deal">10dp</dimen>
+
+    <dimen name="item_hw24h_height">80dp</dimen>
+    <dimen name="item_hw24h_name_size">10sp</dimen>
+
+    <!-- recommend -->
+    <dimen name="item_recommend_height">120dp</dimen>
+    <dimen name="item_recommend_width">100dp</dimen>
+    <dimen name="item_recommend_title_size">12sp</dimen>
+
+    <dimen name="item_news_height">80dp</dimen>
+    <dimen name="item_news_name_size">10sp</dimen>
+
+    <!-- recommend more -->
+    <dimen name="item_image_size">50dp</dimen>
+    <dimen name="item_news_image_size">68dp</dimen>
+
+    <!-- detail -->
+    <dimen name="item_detail_title_height">50dp</dimen>
+    <dimen name="item_detail_bottom_bar_height">50dp</dimen>
+    <dimen name="item_detail_user_size">30dp</dimen>
+    <dimen name="item_detail_null_height">120dp</dimen>
+    <dimen name="item_detail_comment_height">25dp</dimen>
+
+    <!-- tab_line_padding left and right-->
+    <dimen name="tab_line_padding">6dp</dimen>
+
+
+    <!-- price inquiry  && home page "recommend..." -->
+    <dimen name="title_height">50dp</dimen>
+    <dimen name="title_padding">6dp</dimen>
+    <dimen name="item_height">80dp</dimen>
+
+    <!-- 生产厂家 -->
+    <dimen name="item_padding">5dp</dimen>
+    <!-- 销售地/区域 内容与左边框距离-->
+    <dimen name="item_padding_area">10dp</dimen>
+    <dimen name="line_padding_top_title">10dp</dimen>
+    <dimen name="line_padding_top_item">5dp</dimen>
+
+    <!-- info day -->
+    <dimen name="padding_left_info">16dp</dimen>
+    <dimen name="padding_right_info">16dp</dimen>
+    <dimen name="msg_height_info">20dp</dimen>
+    <dimen name="msg_margin_top_info">5dp</dimen>
+    <dimen name="msg_margin_right_info">7dp</dimen>
+
+    <!-- client-->
+    <dimen name="padding_top_item_client_text">5dp</dimen>
+    <dimen name="padding_bottom_item_client_text">5dp</dimen>
+    <dimen name="padding_star">3dp</dimen>
+    <dimen name="height_title_cld">40dp</dimen>
+    <dimen name="padding_title_cld">5dp</dimen>
+    <dimen name="distance_title_cld">10dp</dimen>
+    <dimen name="padding_content_cld">5dp</dimen>
+
+       <!-- 已选区域　中选中的省份距边框距离　左右上(delete tag size)-->
+    <dimen name="margin_cl">6dp</dimen>
+    <dimen name="item_height_cl">50dp</dimen>
+
+    <!-- material -->
+    <dimen name="padding_left_pull_ma">6dp</dimen>
+
+    <dimen name="title_size_4_ma">12sp</dimen>
+    <dimen name="title_size_search_ma">12sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <!-- personal center -->
+    <dimen name="item_height_per">50dp</dimen>
+    <dimen name="item_normal_padding">16dp</dimen>
+    <dimen name="item_margin_top">6dp</dimen>
+
+    <dimen name="item_msg_iv_size">20dp</dimen>
+
+    <!-- quota application-->
+    <dimen name="top_orange_height">130dp</dimen>
+    <dimen name="quota_height">260dp</dimen>
+    <dimen name="quota_margin_top">-130dp</dimen>
+    <dimen name="button_margin_top">80dp</dimen>
+    <dimen name="quota_text_big_number">34sp</dimen>
+    <dimen name="quota_text_big">28sp</dimen>
+    <dimen name="quota_text_big2">18sp</dimen>
+    <dimen name="quota_text_big3">16sp</dimen>
+    <dimen name="quota_text_normal">13sp</dimen>
+    <dimen name="quota_text_height">30dp</dimen>
+
+    <dimen name="step_line_margin">10dp</dimen>
+    <dimen name="item_check_width">80dp</dimen>
+    <dimen name="item_check_width_half">40dp</dimen>
+    <dimen name="item_check_height">30dp</dimen>
+    <dimen name="item_height_apply_step2">45dp</dimen>
+    <dimen name="item_padding_step2">16dp</dimen>
+    <dimen name="image_width">260dp</dimen>
+
+    <!-- update vip -->
+    <dimen name="padding_left_up">10dp</dimen>
+    <dimen name="padding_right_up">16dp</dimen>
+    <dimen name="padding_top_up">16dp</dimen>
+    <dimen name="padding_bottom_up">10dp</dimen>
+    <dimen name="width_vip_card">0dp</dimen>
+    <dimen name="height_vip_card">120dp</dimen>
+    <!--<dimen name="width_vip_card">80dp</dimen>-->
+    <!--<dimen name="height_vip_card">130dp</dimen>-->
+
+    <!-- open deal vip -->
+    <dimen name="image_line_width">36dp</dimen>
+
+    <!-- feedback -->
+    <dimen name="height_feedback">260dp</dimen>
+    <dimen name="height_feedback_tel">50dp</dimen>
+    <!-- improve_information -->
+    <dimen name="padding_enter_info_improve">10dp</dimen>
+    <!-- deal records-->
+    <dimen name="record_margin">10dp</dimen>
+
+    <!-- login -->
+    <dimen name="logo_size">150dp</dimen>
+    <dimen name="icon_size">20dp</dimen>
+    <dimen name="item_icon_padding">10dp</dimen>
+    <dimen name="item_hint_padding">100dp</dimen>
+
+    <!-- publish -->
+    <dimen name="width_edit_box">280dp</dimen>
+    <dimen name="item_padding_purchase">70dp</dimen>
+    <dimen name="margin_linear_address">5dp</dimen>
+
+    <!-- quote detail -->
+    <dimen name="margin_linear_quote">10dp</dimen>
+    <dimen name="height_title_quote">30dp</dimen>
+
+
+    <!-- 文字距离上下 距离 -->
+    <dimen name="margin_text">10dp</dimen>
+
+    <!-- 文字距离上下 距离 -->
+    <dimen name="margin15_text">15dp</dimen>
+
+    <!-- 发布求购 下拉选择框 距离上下距离 -->
+    <dimen name="margin_box_purchase">10dp</dimen>
+    <dimen name="width_box_purchase">240dp</dimen>
+    <dimen name="height_box_purchase">30dp</dimen>
+
+
+</resources>

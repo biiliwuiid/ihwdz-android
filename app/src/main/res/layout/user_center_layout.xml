@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:background="@drawable/personal_center_bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/whiteBackground"
+            android:textSize="18dp"
+            android:text="@string/title_per"/>
+
+        <ImageView
+            android:id="@+id/iv_collection"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_toLeftOf="@+id/iv_msg"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/collection_white"/>
+
+        <ImageView
+            android:id="@+id/iv_msg"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_marginRight="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/msg"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear"
+        android:clickable="true"
+        android:paddingRight="16dp">
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="center_horizontal"
+            android:background="@drawable/circle_white">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/pic_default"/>
+
+        </FrameLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/frame"
+            android:layout_alignRight="@+id/frame"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/vip"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frame"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/tv_user_state"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/whiteBackground"
+                android:textSize="12dp"
+                android:text="@string/login_per"/>
+
+            <TextView
+                android:id="@+id/tv_expireTime"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/greyBackground"
+                android:textSize="10dp"
+                android:text="@string/expire_per"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/enter_white"/>
+
+</RelativeLayout>

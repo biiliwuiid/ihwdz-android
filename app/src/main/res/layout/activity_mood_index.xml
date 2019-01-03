@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:clipChildren="true"
+    android:background="@color/greyBackground"
+    tools:context="com.ihwdz.android.hwapp.ui.home.moodindex.MoodIndexActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone"/>
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_below="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:id="@+id/fl_title_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/web"
+        android:layout_alignLeft="@+id/web"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_gravity="left"
+        android:clickable="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="23dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/back_white" />
+    </FrameLayout>
+
+</RelativeLayout>

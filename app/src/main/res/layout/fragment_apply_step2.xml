@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/step2_layout"
+    android:orientation="vertical"
+    android:background="@color/whiteBackground">
+
+    <LinearLayout
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_width"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/title_w"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:gravity="left"
+            android:textColor="@color/blackText"
+            android:text="@string/business_license"/>
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/business_license_upload"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/greyBackground"/>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear_license_info"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_apply_step2"
+            android:clickable="true"
+            android:background="@color/whiteBackground">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/item_padding_step2"
+                android:text="@string/social_credit_code"
+                />
+
+            <EditText
+                android:id="@+id/edit_credit_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/item_hint_padding"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                style="@style/HintTextStyle"
+                android:gravity="right"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:hint=""
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grayLineDarker"/>
+
+        <RelativeLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_apply_step2"
+            android:clickable="true"
+            android:background="@color/whiteBackground">
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/item_padding_step2"
+                android:text="@string/company_name"
+                />
+
+            <EditText
+                android:id="@+id/edit_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/item_hint_padding"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                style="@style/HintTextStyle"
+                android:gravity="right"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:hint=""
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grayLineDarker"/>
+
+        <RelativeLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_apply_step2"
+            android:clickable="true"
+            android:background="@color/whiteBackground">
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/item_padding_step2"
+                android:text="@string/legal_person"
+                />
+
+            <EditText
+                android:id="@+id/edit_legal_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/item_hint_padding"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                style="@style/HintTextStyle"
+                android:gravity="right"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:hint=""
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grayLineDarker"/>
+
+        <RelativeLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_apply_step2"
+            android:clickable="true"
+            android:background="@color/whiteBackground">
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/item_padding_step2"
+                android:text="@string/date_establish"
+                />
+
+            <TextView
+                android:id="@+id/edit_date_establish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/item_hint_padding"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                style="@style/HintTextStyle"
+                android:gravity="right"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:hint=""
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grayLineDarker"/>
+
+        <RelativeLayout
+            android:id="@+id/linear5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_apply_step2"
+            android:clickable="true"
+            android:background="@color/whiteBackground">
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/item_padding_step2"
+                android:text="@string/validity_date"
+                />
+
+            <TextView
+                android:id="@+id/edit_validity_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/item_hint_padding"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                style="@style/HintTextStyle"
+                android:gravity="right"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:hint=""
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_checking"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@color/whiteBackground">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:background="@drawable/grey_rect_toast"
+            android:text="@string/info_checking"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

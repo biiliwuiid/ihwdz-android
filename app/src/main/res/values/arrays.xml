@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--///////////////////////////////////////首页/////////////////////////////////////-->
+
+
+    <!--首页底部导航栏的标题，未选中时-->
+    <integer-array name="main_tab_un_select">
+        <item name="tab_home">@drawable/tab_homepage</item>
+        <item name="tab_order">@drawable/tab_order</item>
+        <item name="tab_publish">@drawable/ic_home_black_24dp</item>
+        <item name="tab_orders">@drawable/tab_orders</item>
+        <!--<item name="tab_logistics">@drawable/tab_logistics</item>-->
+        <item name="tab_me">@drawable/tab_user</item>
+    </integer-array>
+
+    <!--首页底部导航栏的标题，选中时-->
+    <integer-array name="main_tab_select">
+        <item name="tab_home">@drawable/tab_homepage_selected</item>
+        <item name="tab_order">@drawable/tab_order_selected</item>
+        <item name="tab_publish">@drawable/ic_home_black_24dp</item>
+        <item name="tab_orders">@drawable/tab_orders_selected</item>
+        <!--<item name="tab_logistics">@drawable/tab_logistics_selected</item>-->
+        <item name="tab_me">@drawable/tab_user_selected</item>
+    </integer-array>
+
+    <!--首页底部导航栏文字-->
+    <string-array name="main_title">
+        <item>首页</item>
+        <item>求购</item>
+        <item>发布</item>
+        <item>订单</item>
+        <item>我的</item>
+    </string-array>
+
+    <!--首页精选跑马灯文字-->
+    <string-array name="main_marquee_title">
+        <item>1.breed: ABS  price: 46.0  flatNum: 440 </item>
+        <item>2.breed: PP  price: 52.0  flatNum: 107</item>
+        <item>3.breed: PC  price: 55.0  flatNum: 107</item>
+    </string-array>
+
+    <!--轮播图图片-->
+    <integer-array name="banner_image">
+        <item>@drawable/banner</item>
+        <item>@drawable/banner1</item>
+        <item>@drawable/banner2</item>
+    </integer-array>
+
+    <!-- 首页 tabs图片-->
+    <integer-array name="find_gv_image">
+        <item>@drawable/prices_inquiring</item>
+        <item>@drawable/info_days</item>
+        <item>@drawable/index_inquiring</item>
+        <item>@drawable/clients_seeking</item>
+        <item>@drawable/material_seeking</item>
+    </integer-array>
+
+    <!--首页 tabs 图片对应的位子-->
+    <string-array name="find_gv_title">
+        <item>查价格</item>
+        <item>看资讯</item>
+        <item>看指数</item>
+        <item>找客户</item>
+        <item>买原料</item>
+    </string-array>
+
+
+    <!-- 看资讯 标题 -->
+    <string-array name="info_title">
+        <item>企业调价</item>
+        <item>装置动态</item>
+        <item>市场风云</item>
+        <item>深度研报</item>
+        <item>行业热点</item>
+        <item>宏观头条</item>
+    </string-array>
+
+
+    <!-- 订单 交易 标题 -->
+    <string-array name="order_deal_title">
+        <item>全部订单</item>
+        <item>待付款</item>
+        <item>待发货</item>
+        <item>待收货</item>
+        <item>待开票</item>
+    </string-array>
+    <!-- 订单 商家 标题 -->
+    <string-array name="order_business_title">
+        <item>全部订单</item>
+        <item>待收款</item>
+        <item>待发货</item>
+        <item>待收货</item>
+        <item>交易成功</item>
+    </string-array>
+
+
+    <!-- HwApp Dialog -->
+    <declare-styleable name="AppDialogTheme">
+        <attr name="AppDialogStyle" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="AppDialog">
+        <attr name="dialogBackground" format="color"/>
+        <attr name="titleColor" format="color"/>
+        <attr name="messageColor" format="color"/>
+        <attr name="buttonBackground" format="color"/>
+        <attr name="buttonTextColor" format="color"/>
+        <attr name="vividButtonBackground" format="color"/>
+        <attr name="vividButtonTextColor" format="color"/>
+        <attr name="dialogBorder" format="dimension"/>
+    </declare-styleable>
+
+
+
+    <string-array name="link_ways">
+        <item>有手机</item>
+        <item>有邮箱</item>
+    </string-array>
+
+    <string-array name="reg_money">
+        <item>100W以内</item>
+        <item>100-200W</item>
+        <item>200-500W</item>
+        <item>500-1000W</item>
+        <item>1000W以上</item>
+    </string-array>
+
+    <string-array name="reg_date">
+        <item>1年以内</item>
+        <item>1-5年</item>
+        <item>5-10年</item>
+        <item>10-15年</item>
+        <item>15年以上</item>
+    </string-array>
+
+</resources>

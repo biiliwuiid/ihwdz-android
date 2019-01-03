@@ -1,0 +1,755 @@
+<resources>
+    <!-- HwApp -->
+    <string name="app_name">鸿网大宗</string>
+
+    <string name="easy_permissions">该APP需要您允许打开电话，拍摄照片和访问设备上的文件的权限</string>
+
+    <!--登录注册相关-->
+    <string name="login_state_expired">登录已过期请重新登录</string>
+
+
+    <string name="login_state">正在玩命登录</string>
+    <string name="register_state">正在玩命注册</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="logout">退出登录</string>
+
+    <string name="dynamic_pwd">手机动态密码登录</string>
+    <string name="account_pwd">账号密码登录</string>
+    <string name="pwd_forget">忘记密码?</string>
+
+    <string name="qq">QQ</string>
+    <string name="we_chat">微信</string>
+    <string name="blog">微博</string>
+
+    <string name="title_tab0">首页</string>
+    <string name="title_tab1">求购</string>
+    <string name="title_tab2">发布</string>
+    <string name="title_tab3">物流</string>
+    <string name="title_tab4">我的</string>
+
+    <string name="title_ad">2018鸿网大宗能化产业论坛</string>
+
+    <!-- register-->
+    <string name="account_existed">账号已存在！</string>
+    <string name="name">姓名</string>
+    <string name="name_hint">请输入姓名</string>
+    <string name="company">公司</string>
+    <string name="company_hint">请输入公司名称</string>
+    <string name="telephone">电话</string>
+    <string name="telephone_hint">请输入电话号码</string>
+    <string name="verification">验证码</string>
+    <string name="verification_hint">请输入验证码</string>
+    <string name="verification_get">获取验证码</string>
+    <string name="pwd">密码</string>
+    <string name="pwd_confirm">确认密码</string>
+    <string name="pwd_hint">请输入密码</string>
+    <string name="purchaser">我是买家</string>
+    <string name="business">我是商家</string>
+    <string name="market_consultant">营销顾问</string>
+    <string name="assign_market_consultant">我需要平台为我指派营销顾问</string>
+    <string name="business_management">商家管理</string>
+    <string name="chose">请选择</string>
+    <string name="protocol">同意鸿网大宗</string>
+    <string name="terms_of_service">《服务条款》</string>
+    <string name="and">和</string>
+    <string name="privacy_policy">《隐私协议》</string>
+    <string name="title_terms_of_service">服务条款</string>
+    <string name="title_privacy_policy">隐私协议</string>
+    <!-- 《服务条款》和《隐私协议》 -->
+    <string name="name_null">姓名不能为空</string>
+    <string name="telephone_no_null">手机号不能为空</string>
+    <string name="telephone_not_right">请输入正确的手机号</string>
+
+    <string name="id_no_null">身份证号码不能为空</string>
+    <string name="id_not_right">请输入正确的身份证号码</string>
+
+    <string name="pwd_null">密码不能为空</string>
+    <string name="pwd_different">两次输入的密码不相同</string>
+    <string name="verification_code_null">验证码为空</string>
+    <string name="send_again">重新发送</string>
+    <string name="after_seconds">秒后</string>
+    <string name="company_null">公司名称不能为空</string>
+    <string name="admin_null">请选择营销顾问或选择平台指派</string>
+    <string name="eula_null">请先同意用户协议</string>
+
+
+    <!-- 情绪指数　-->
+    <string name="mood_index_title">PP情绪指数</string>
+
+    <!-- 实时成交 -->
+    <string name="deal_title">今日成交(现款价)</string>
+    <string name="deal_date">+关注</string>
+    <string name="deal_city">HangKong</string>
+    <string name="deal_material">PC</string>
+    <string name="deal_price">12345</string>
+    <string name="deal_type">T30S</string>
+    <string name="deal_day">day 0.6%</string>
+    <string name="deal_week">week 0.2%</string>
+    <string name="deal_price_unit">元/吨</string>
+
+    <string name="title_fy_news">市场风云</string>
+    <string name="title_sd_news">深度研报</string>
+    <string name="title_hy_news">行业热点</string>
+    <string name="title_tt_news">宏观头条</string>
+
+    <!--<string name="title_activity_tabbed">TabbedActivity</string>-->
+    <!--<string name="action_settings">Settings</string>-->
+    <!--<string name="section_format">Hello World from section: %1$d</string>-->
+
+    <!-- hw24h more -->
+    <string name="title_hw24h">鸿网２４小时</string>
+    <!-- recommend more -->
+    <string name="title_re">推荐</string>
+    <string name="trade_abc_re">行业ABC</string>
+    <string name="trade_re">行业研究</string>
+
+    <!-- detail -->
+    <string name="source_de">来源：%1$s</string>
+    <string name="comment0_de">精彩评论(0)</string>
+    <string name="comment_de">精彩评论(%1$s)</string>
+    <string name="comment_null_de">鸿网期待您的精彩评论哦！</string>
+    <string name="reply_de">回复</string>
+    <string name="recommend_de">热门推荐</string>
+    <string name="recommend_null_de">还没有推荐！</string>
+    <string name="search_de">说点什么...</string>
+    <string name="statement_de">免责声明： 鸿网大宗提供的信息仅供客户决策参考，并不构成对客户决策的直接建议，客户不应以此取代自己的独立判断，客户做出的任何决策与鸿网大宗无关。</string>
+
+
+    <!-- Price Inquiry -->
+    <string name="title_price">查价格</string>
+    <string name="spec_p">型号</string>
+    <string name="brand_p">厂家</string>
+    <string name="area_p">销售地</string>
+    <string name="regions_p">区域</string>
+    <string name="date">日期</string>
+    <string name="collection">收藏</string>
+
+    <string name="price">¥ %1$s</string>
+    <!--<string name="price">价格%1$s</string>-->
+    <string name="up_down">涨跌%1$s</string>
+    <string name="up_down0">涨跌</string>
+    <string name="up_down1">涨跌%1$s,作者(字符串)%2$s,编号(整数)%3$d,价格(浮点型)：%4$.2f</string>
+    <string name="up_down2">涨跌%1$s,作者(字符串)%2$s,编号(整数)%3$d,价格(浮点型)：%4$.2f</string>
+    <string name="look_more_price">查看更多</string>
+    <string name="load_more_price">上拉加载更多</string>
+
+    <string name="collection_title">我的收藏</string>
+    <string name="collected_remind">已收藏</string>
+
+    <string name="breed">品类</string>
+    <string name="spec">型号</string>
+    <string name="factory">厂家</string>
+    <string name="area_sell">销售地</string>
+
+    <!-- info day-->
+    <string name="title_info">看资讯</string>
+    <string name="all_info">全部</string>
+    <string name="price_info">企业调价</string>
+    <string name="dynamic_info">装置动态</string>
+
+    <!-- client -->
+    <string name="title_cl">找客户</string>
+    <string name="search_cl">\t包装材料，生活日用，通用塑料</string>
+    <string name="filter_cl">筛选</string>
+    <string name="update_cl">即刻开启“用户查询”功能</string>
+    <string name="no_more_cl">升级会员查看更多</string>
+    <string name="update_button_cl">成为VIP</string>
+    <!--<string name="update_to_vip">成为VIP</string>-->
+    <!--<string name="title_filter_cl">立即升级</string>-->
+
+    <!-- client filter -->
+    <string name="title_filter_cl">筛选</string>
+    <string name="all_filter_cl">全部地区</string>
+    <string name="more_filter_cl">更多</string>
+    <string name="selected_filter_cl">已选区域</string>
+    <string name="clear_filter_cl">清空条件</string>
+    <string name="confirmation_filter_cl">确认</string>
+
+    <string name="link_way_fi">手机号码/邮箱</string>
+    <string name="reg_money_fi">注册资本</string>
+    <string name="reg_date_fi">注册时间</string>
+
+    <string name="phone_fi">有手机</string>
+    <string name="email_fi">有邮箱</string>
+    <string name="money_100">100W以内</string>
+    <string name="money_100_200">100-200W</string>
+    <string name="money_200_500">200-500W</string>
+    <string name="money_500_1000">500-1000W</string>
+    <string name="money_1000">1000W以上</string>
+    <string name="date_1">1年以内</string>
+    <string name="date_1_5">1-5年</string>
+    <string name="date_5_10">5-10年</string>
+    <string name="date_10_15">10-15年</string>
+    <string name="date_15">15年以上</string>
+
+    <!-- client detail-->
+    <string name="business_info_cld">工商信息</string>
+    <string name="company_intro_cld">公司简介</string>
+    <string name="business_scope_cld">经营范围</string>
+    <string name="product_info_cld">生产信息</string>
+    <string name="material_info_cld">使用原料</string>
+    <string name="device_list_cld">设备清单</string>
+    <string name="product_device_cld">产品设备展示</string>
+
+    <string name="manager"> | 总经理</string>
+
+    <string name="unfold">展开</string>
+    <string name="fold">收起</string>
+    <string name="nothing">无</string>
+    <string name="person">人</string>
+    <string name="ten_thousand">万元</string>
+
+    <!-- 工商信息 -->
+    <string name="companyEmployeeNumber">公司规模</string>
+    <string name="companyRegisterMoney">注册资本</string>
+    <string name="companyCreatedTimeStr">注册时间</string>
+
+    <!-- 生产信息 -->
+    <string name="yearSaleAmount">年销售额</string>
+    <string name="factoryArea">厂房面积</string>
+    <string name="kgRate">机器开工率</string>
+    <string name="materialType">原料类型</string>
+    <string name="productTpe">产品类型</string>
+    <string name="marketFlow">市场流向</string>
+
+    <!-- 使用原料 -->
+    <string name="materialName">常用品种</string>
+    <string name="materialManufactory">常用商家</string>
+    <string name="materialGrade">常用型号</string>
+
+    <!-- 设备清单 -->
+    <string name="deviceName">设备名称</string>
+    <string name="deviceBrand">品牌</string>
+    <string name="deviceGrade">型号</string>
+    <string name="deviceQuantity">设备数量</string>
+    <string name="purchaseDate">购买日期</string>
+
+
+    <!-- update to vip-->
+    <string name="title_up">升级会员</string>
+    <string name="remind_up">成为VIP,即刻开启“用户查询”功能</string>
+    <string name="vip_right_up">会员权益</string>
+    <string name="pay_up">支付方式</string>
+    <string name="update_vip_now">立即开通会员</string>
+    <string name="no_pay_up">请选择支付方式</string>
+
+    <string name="sparrow">麻雀</string>
+    <string name="magpie">喜鹊</string>
+    <string name="phoenix">凤凰</string>
+    <string name="currency_sign">¥</string>
+    <string name="currency_unit">元</string>
+
+
+    <!-- index -->
+    <string name="title_index">看指数</string>
+    <string name="title2_index">原料品类</string>
+    <string name="newest_index">最新</string>
+    <string name="up_down_index">涨跌</string>
+    <string name="date_index">日期</string>
+
+
+    <!-- Material -->
+    <string name="title_ma">买原料</string>
+    <string name="breed_ma">PP</string>
+    <!--<string name="breed_ma">%1$s</string>-->
+    <string name="spec_ma">牌号</string>
+    <string name="city_ma">城市</string>
+    <string name="brand_ma">厂商</string>
+    <string name="search_ma">\t寻找您需要的原料</string>
+
+
+    <string name="price_ma">价格：%1$s 元/吨</string>
+    <string name="address_ma">交货地：%1$s</string>
+    <string name="telephone_ma">联系电话：</string>
+    <string name="amount_ma">数量：%1$s 吨</string>
+    <string name="manufacturer_ma">厂商：%1$s</string>
+    <string name="date_ma">时间：%1$s</string>
+    <string name="supplier_ma">供应商：%1$s</string>
+    <string name="negotiation">面议</string>
+
+
+    <!-- user notes -->
+    <string name="title_user_notes">用户须知</string>
+    <string name="contents_note_title">内容说明</string>
+    <string name="contents_note">这是国内的第一个制塑行业通讯录，基于我们积累的数据信息通过大数据技术制作而成，我们采用科学抽样的方式验证过联系信息，确保信息的精准、全面，但数据庞大，验证周期要三个多月，在此期间企业可能有所变动，敬请谅解，也欢迎反馈给我们。</string>
+    <string name="privacy_feedback_title">隐私反馈</string>
+    <string name="privacy_feedback">内容来源于社会公开的信用信息和企业自愿公开的数据信息，仅涉及公开的机构联络信息，决不涉及到对个人隐私造成侵犯的相关信息，确保符合国家法律要求。我们尊重个人隐私，明示了相关准则，确保会员任何隐私信息的安全，绝不泄露。</string>
+    <string name="disclaimer_title">免责声明</string>
+    <string name="disclaimer">该通讯录仅供会员内部使用，为您的决策提供参考，禁止用作任何违法用途，因违法使用该内容而产生的任何后果，我们概不负责。\n\n联系电话：021—39915726      15618080206 （微信）</string>
+
+    <!-- user notes _order -->
+    <string name="title_order_notes">订单须知</string>
+
+    <string name="order_note_title1">特别提示</string>
+    <string name="order_note_title2">订单内容与价格</string>
+    <string name="order_note_title3">收费标准</string>
+    <string name="order_note_title4">订单生效与解除</string>
+    <string name="order_note_title5">解决争议适用法律法规约定</string>
+    <string name="contents_note1">鸿网电商平台上的产品由具备相关资质的合作供应商直接提供，平台仅提供代采服务、资金服务、物流服务等。\n 在订单确认前，请仔细阅读本须知。当您开始下单产品时，表明您已仔细阅读并接受协议中的所有条款。</string>
+    <string name="contents_note2">订单中内容包括代采服务、资金服务、物流服务等对应产品服务价格，以上服务内容在订单中又被分为固定服务和延伸服务两类。具体的最终包含内容以确定的订单约定内容为准。 \n 鸿网电商平台及其合作供应商保留在不事先知会的情况下更改其网站上已公布的产品价格的权利。您确认的订单价格，以确认订单上约定的金额为准。</string>
+    <string name="contents_note3">平台需收取单笔订单金额的0.3%手续费，会员可开通包年免手续费服务。 \n 平台需收取授信模式下的资金服务费。资金服务费根据占用资金、会员的资金服务费利率和账期天数计算（相乘），授信模式必须先缴纳平台交易保证金方可进行交易。</string>
+    <string name="contents_note4">只有供应商确认了您的订单，并且您及时支付订单的应付费用（手续费或订金），确认的订单方会生效。如您未按要求及时支付相关费用，而此时产品的价格、内容或标准等发生变化，鸿网电商平台及其合作供应商对此将不承担任何责任。 \n 订单生效后，如需取消订单，请您及时联系平台的营销顾问进行咨询，但您必须承担处理该订单已经支出的一切费用。包括采购损失费、物流费、人员成本费用等。</string>
+    <string name="contents_note5">在您的预订生效后，如果在本须知或合同约定内容履行过程中，您对相关事宜的履行发生争议，您同意按照相关法律法规或履约合同来解决争议。本须知未尽的其他事项，会在其他协议中另行约定。 \n\n 联系电话：021-39915726</string>
+
+
+
+
+
+    <!-- Personal center -->
+    <string name="title_per">个人中心</string>
+    <string name="login_per">登录/注册</string>
+    <string name="expire_per">level %2$s到期</string>
+    <string name="collection_per">我的收藏</string>
+    <string name="deals_per">交易记录</string>
+    <string name="logistics_per">物流小助手</string>
+
+    <!-- business vip -->
+    <string name="quote_mine_per">我的报价</string>
+
+    <!-- deal vip -->
+    <string name="purchase_list_per">我的求购单</string>
+    <string name="quota_check_per">查看额度</string>
+    <string name="deposit_per">保证金</string>
+
+    <string name="hw_vip_per">我的交易会员</string>
+    <string name="hw_vip_cn_per">鸿网公众号</string>
+    <string name="about_us_per">关于我们</string>
+    <string name="customer_service_per">联系客服</string>
+    <string name="service_tel_per">021-39915739</string>
+    <string name="settings_per">设置</string>
+    <string name="feedback_per">意见反馈</string>
+    <string name="vip_cn_per">关注鸿网大宗官方微信订阅号，获取每日最新市场数据资讯，还有塑化大礼包等你来拿！</string>
+
+    <!-- Quota application -->
+    <string name="title_quota">申请额度</string>
+    <string name="quota_apply_now">立即申请额度</string>
+    <string name="info_checking">信息校验中请稍后...</string>
+    <string name="open_again">重新开通申请</string>
+    <string name="back_personal_center">返回个人中心</string>
+    <string name="back">返回</string>
+    <string name="quota_no">暂无额度</string>
+    <string name="review_progress">我的审核进度</string>
+    <string name="reviewing">您已完成开通申请</string>
+
+    <string name="reviewing_failure">会员开通申请失败</string>
+
+    <string name="reviewing_improve_text">1-3个工作日内，鸿网工作人员会与您取得联系核对相关信息\n如有疑问，请拨打客服热线: 021-39915739</string>
+    <string name="reviewing_text">交易会员开通申请已提交，1-3个工作日内，鸿网工作人员会对资料进行审核\n如有疑问，请拨打客服热线: 021-39915739</string>
+    <string name="reviewing_failure_text">交易会员开通申请驳回，驳回原因：法人信息不正确。1-3个工作日内，鸿网工作人员会与您取得联系核对相关信息\n如有疑问，请拨打客服热线: 021-39915739</string>
+
+    <string name="credit_limit">信用额度 （元）</string>
+    <string name="credit_limit_number">¥50000</string>
+    <!--<string name="credit_limit_number">¥%1$s</string>-->
+    <string name="limit_used">已用额度</string>
+    <string name="limit_used_number">258000元</string>
+    <!--<string name="limit_used_number">%1$元</string>-->
+    <string name="limit_available">可用额度</string>
+    <string name="limit_available_number">258000元</string>
+    <!--<string name="limit_available_number">%1$s元</string>-->
+    <string name="info_personal">法人信息</string>
+    <string name="info_enterprise">企业信息</string>
+    <string name="info_production">生产信息</string>
+    <string name="info_admin">管理员信息</string>
+    <string name="name_legal_person">法人姓名</string>
+    <string name="name_legal_person_null">法人不能为空</string>
+    <string name="id_card_no">法人身份证</string>
+    <string name="id_card_no_hint">请输入身份证</string>
+    <string name="telephone_no">法人手机号</string>
+    <string name="telephone_no_hint">请输入手机号</string>
+    <string name="authentication">身份验证</string>
+
+    <string name="business_license">营业执照</string>
+    <string name="license_null">营业执照未上传</string>
+    <string name="credit_code_error">社会信用代码有误</string>
+    <string name="company_name_empty">单位名称不能为空</string>
+    <string name="invoice_info">开票资料</string>
+    <string name="invoice_amount_include">¥ %1$s(包含贴现金额 ¥ %2$s )</string>
+    <string name="invoice_amount">¥ %1$s</string>
+    <string name="social_credit_code">社会信用代码</string>
+    <string name="social_credit_code_remind">请输入18位社会信用代码</string>
+    <string name="company_name">单位名称</string>
+    <string name="legal_person">法人</string>
+    <string name="date_establish">成立日期</string>
+    <string name="fund_register">注册资金</string>
+    <string name="address_district">所在地区</string>
+    <string name="address_detail">详细地址</string>
+    <string name="validity_date">有效期</string>
+
+    <string name="material_purchase">采购原料</string>
+    <string name="goods_main">主营商品类型</string>
+
+    <string name="previous">上一步</string>
+    <string name="next">下一步</string>
+    <string name="complete">完成</string>
+
+
+    <!-- publish -->
+    <string name="purchase_publish_title">发布求购</string>
+
+    <string name="product_detail">产品明细</string>
+    <string name="delete">删除</string>
+
+    <string name="breed_purchase">原料品名:</string>
+    <string name="brand_purchase">原料牌号:</string>
+    <string name="factory_purchase">生产厂家:</string>
+    <string name="amount_purchase">数量(吨):</string>
+
+    <string name="add_product">增加明细</string>
+
+    <string name="empty_search_result">暂时没有你要搜索的数据</string>
+    <string name="empty_address">您的收货信息为空，点此添加收货信息</string>
+
+
+    <string name="purchase_publish">我要采购</string>
+    <string name="quote_publish">我要报价</string>
+    <string name="title_purchase">求购</string>
+    <string name="address_purchase">所在地:</string>
+
+    <string name="ton">吨</string>
+    <string name="no_purchase_msg">暂时没有求购信息</string>
+    <string name="coming_soon">敬请期待</string>
+
+    <!-- receiver address -->
+    <string name="address_title">收货地址</string>
+    <string name="address_add">添加新地址</string>
+    <string name="edit">编辑</string>
+    <string name="default_data">默认</string>
+    <string name="checking_data">审核中</string>
+    <string name="address_checking">收货地址审核中，请耐心等待！</string>
+    <!-- purchase pool -->
+    <string name="purchase_all">全部求购</string>
+    <string name="purchase_mine">我的求购</string>
+    <string name="quote_all">全部报价</string>
+    <string name="quote_mine">我的报价</string>
+
+    <string name="purchase_quote_title">求购报价</string>
+    <string name="quote_count_title">报价(%1$s)</string>
+    <string name="business_name">商家: %1$s</string>
+    <string name="purchase_price">采购报价: %1$s 元/吨</string>
+    <string name="logistic_fee">物流费: %1$s 元/吨</string>
+
+    <string name="quote_null">暂无报价</string>
+    <string name="quote_showed">已报价</string>
+    <string name="quote_button">报价</string>
+    <string name="quote_count">%1$s个商家报价</string>
+
+    <string name="quote_confirm">确认报价</string>
+    <string name="review_null">请输入备注信息</string>
+    <string name="review_hint">请输入复议备注</string>
+    <string name="review_confirm">确认复议</string>
+    <string name="quote_detail_title">报价详情</string>
+    <string name="quote_range">报价范围:5000-40000(元/吨)</string>
+    <string name="quote_too_high">输入金额应不大于40000</string>
+    <string name="quote_too_low">输入金额应不少于5000</string>
+
+    <string name="credit_too_high">输入授信额度应不大于 %1$s元</string>
+    <string name="credit_too_low">输入授信额度应大于0</string>
+
+    <string name="unconfirmed_logistic">待物流确认</string>
+    <string name="unconfirmed">待确认</string>
+    <string name="reconsideration">待复议</string>
+    <string name="reconsider">复议报价</string>
+    <string name="unconfirmed2">待二次确认</string>
+    <string name="ordered">已下单</string>
+    <string name="invalid">失效</string>
+
+    <string name="remind_open_deal_vip">未成为交易会员，暂时不能发布求购！</string>
+    <string name="remind_business_authentic">商家会员未认证，暂时不能报价！</string>
+    <string name="remind_open">去开通</string>
+    <string name="remind_authentic">去认证</string>
+
+    <!-- purchase  list -->
+    <string name="purchase_breed">%1$s \t|\t %2$s \t|\t %3$s</string>
+    <string name="purchase_address">%1$s \t %2$s \t %3$s \t %4$s</string>
+    <string name="purchase_amount">采购量: %1$s吨</string>
+    <string name="address_distribution">配送地: %1$s</string>
+    <string name="unit_price">单价: ¥ %1$s 元/吨</string>
+    <string name="remarks">复议备注: %1$s</string>
+
+    <!-- purchase detail -->
+
+    <string name="purchase">采购</string>
+
+    <string name="quote">报价</string>
+    <string name="supplier_distribution">供方提供配送</string>
+    <string name="supplier_distribution_text">商家包配送</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="warehouse_choose">选择仓库</string>
+    <string name="warehouse_address">仓库地址</string>
+    <string name="delivery_date">交货日期</string>
+    <string name="unit_price_quote">单价（元/吨）</string>
+    <string name="unit_price_title">单价</string>
+
+    <string name="quote_review">报价复议</string>
+    <string name="quote_remark">报价备注</string>
+    <string name="review_quote">复议报价</string>
+    <string name="price_review">价格复议</string>
+    <string name="review_price">复议价格</string>
+    <string name="place_an_order">一键下单</string>
+
+    <string name="total_sum_text">合计金额: </string>
+    <string name="total_sum"> ¥ %1$s</string>
+
+    <!-- warehouse -->
+    <string name="warehouse_title">选择仓库</string>
+    <string name="search_history">历史搜索</string>
+    <string name="search_history_empty">没有历史搜索记录</string>
+
+    <string name="cannot_be_null">不能为空</string>
+    <string name="build_warehouse_title">添加新仓库</string>
+    <string name="warehouse_exist">%1$s 已经存在 是否直接使用</string>
+    <string name="add_address_title">添加收货地址</string>
+    <string name="update_address_title">修改收货地址</string>
+    <string name="warehouse_null">仓库名不能为空</string>
+    <string name="warehouse_name">仓库名称</string>
+    <string name="linkman">联系人</string>
+    <string name="receiver">收货人</string>
+    <string name="link_tel">联系电话</string>
+    <string name="address">地址</string>
+    <string name="choose_pcd">请选择省市区</string>
+    <string name="as_default">设为默认</string>
+
+
+    <!-- Order -->
+    <string name="order_title">订单</string>
+    <string name="order_all">全部订单</string>
+    <string name="order_wait_pay">待付款</string>
+    <string name="order_wait_deliver">待发货</string>
+    <string name="order_wait_take">待收货</string>
+    <string name="order_wait_invoice">待开票</string>
+    <string name="order_success">交易成功</string>
+    <string name="order_failure">交易失败</string>
+    <string name="order_wait_check">待审核</string>
+    <string name="order_wait_collection">待收款</string>
+    <string name="order_wait_confirm">待确认收货</string>
+
+    <string name="spec_brand">牌号：%1$s,\t 生产厂家：%2$s</string>
+    <string name="charges">手续费：  \t\t ¥ %1$s</string>
+    <string name="total">合计：  \t ¥ %1$s</string>
+
+    <string name="order_cancel">取消订单</string>
+    <string name="order_pay">支付手续费</string>
+
+
+    <!-- Order confirm -->
+    <string name="order_confirm_title">确认订单</string>
+    <string name="order_receiver">收货人：%1$s</string>
+    <string name="order_address">收货地址：%1$s</string>
+    <string name="order_business">商家：%1$s</string>
+    <string name="order_warehouse">仓库：%1$s</string>
+
+    <string name="distribution_way">配送方式</string>
+    <string name="distribution_platform">平台配送</string>
+    <string name="distribution_supplier">供方配送</string>
+    <string name="distribution_self">自提</string>
+    <string name="freight">运费单价</string>
+    <string name="payment_method">结算方式</string>
+
+    <string name="credit_all">全部授信</string>
+    <string name="credit_part">部分授信</string>
+    <string name="pay_first">款到发货</string>
+    <string name="pay_on_delivery_day">货到当天付款</string>
+
+    <string name="credits_all_payment">全部授信（剩余 ¥ %1$s）</string>
+    <string name="credit_part_payment">部分授信（预先支付预付款）</string>
+    <string name="pay_first_payment">款到发货（先支付全部货款）</string>
+    <string name="pay_on_day_payment">货到当天付款（账期1天）</string>
+    <string name="deposit_money_null">未缴纳会员授信保证金，暂时只允许做款到发货！</string>
+    <string name="only_pay_first">该会员暂时只允许做款到发货！</string>
+
+
+    <string name="payment_day">账期</string>
+    <string name="service_rate">资金服务费利率</string>
+
+    <string name="order_subtotal">订单小计</string>
+    <string name="fund_fee">资金服务费</string>
+    <string name="sell_price">销售单价</string>
+    <string name="use_credit">使用授信</string>
+    <string name="charge">手续费</string>
+
+    <string name="order_submit">提交订单</string>
+
+    <!-- Order detail -->
+    <string name="order_detail_title">订单详情</string>
+    <string name="order_info">订单信息</string>
+
+    <string name="advance_payment">预付款</string>
+    <string name="order_id">交易订单号</string>
+    <string name="total_price">商品总价</string>
+    <string name="amount_total">合计金额</string>
+    <string name="receipt_info">收货信息</string>
+
+    <string name="invoice_apply">申请开票</string>
+
+    <!-- apply extension -->
+    <string name="extension_apply_title">申请展期</string>
+    <string name="extension_remarks_title">展期备注</string>
+    <string name="order_number">订单号</string>
+    <string name="credit_line">授信额度</string>
+    <string name="credit_line_0">授信额度必须大于0</string>
+    <string name="credit_hint">请输入需要使用的授信</string>
+    <string name="credit_left">剩余额度：¥ %1$s</string>
+    <string name="extension_rate">展期利率</string>
+    <string name="extension_amount">展期金额</string>
+    <string name="remark">备注</string>
+    <string name="remark_hint">请输入备注</string>
+
+    <!-- payment-->
+    <string name="payment_title">在线支付</string>
+    <string name="pay_now">立即支付 ¥ %1$s</string>
+    <!-- Order end -->
+
+
+    <string name="title_messages_center">消息中心</string>
+    <string name="title_msg">系统消息</string>
+
+    <string name="title_my_collection">我的收藏</string>
+    <string name="no_collection">暂时没有收藏</string>
+    <string name="title_trade_records">交易记录</string>
+    <string name="no_records">暂时没有交易记录</string>
+
+    <!-- 保证金 -->
+    <string name="deposit_title">保证金</string>
+    <string name="deposit_mine">我的保证金（元）</string>
+    <string name="deposit_refund">我要退保证金</string>
+    <string name="deposit_refund_cancel">不退了</string>
+    <string name="refund_remind_title">退保证金后</string>
+    <string name="refund_remind1">1、你无法继续使用“全部授信/部分授信”继续下单</string>
+    <string name="refund_remind2">2、再次申请缴纳，需要重新提交相关材料，保证金比例翻倍</string>
+    <string name="refund_success">元 退款成功</string>
+    <!--<string name="refund_success">%1$s 元 退款成功</string>-->
+    <string name="refund_pay">预计0-5个工作日原路退回支付账户</string>
+
+    <!-- open deal vip-->
+    <string name="title_open_deal_vip">开通交易会员</string>
+    <string name="title_info_vip">我的资讯会员</string>
+    <string name="title_deal_vip">我的交易会员</string>
+    <string name="title_business_vip">我的商家会员</string>
+    <string name="choose_please">请选择</string>
+    <string name="assigned">平台指派</string>
+    <string name="search">\t搜索</string>
+
+
+    <string name="title_update_license">修改营业执照</string>
+    <string name="title_update_invoice">修改开票资料</string>
+    <string name="pick_photo">从相册选一张</string>
+    <string name="take_photo">拍一张照片</string>
+
+
+    <!-- feedback -->
+    <string name="title_feedback">我要反馈</string>
+    <string name="type_feedback">反馈问题类型</string>
+    <string name="price_feedback">价格问题</string>
+    <string name="material_feedback">原料问题</string>
+    <string name="experience_feedback">体验问题</string>
+    <string name="other_feedback">其他</string>
+    <string name="hint_feedback">感谢反馈，请您写下您的问题或意见</string>
+    <string name="submit">提交</string>
+
+    <!-- improve information -->
+    <string name="title_improve">完善信息</string>
+    <string name="email">电子邮件</string>
+    <string name="district">地区</string>
+    <string name="enterprise_name">企业名称</string>
+    <string name="enterprise_type">企业类型</string>
+    <string name="enterprise_type_text">生产企业</string>
+    <string name="enterprise_nature">企业性质</string>
+    <string name="enterprise_nature_text">国有企业</string>
+
+    <!-- 交易记录 -->
+    <string name="status_trade_records">交易中</string>
+    <string name="status10_trade_records">待审核</string>
+    <string name="status11_trade_records">待上传合同</string>
+    <string name="status20_trade_records">待收款</string>
+    <string name="status30_trade_records">待付款</string>
+    <string name="status40_trade_records">待发货</string>
+    <string name="status50_trade_records">待确认收货</string>
+    <string name="status90_trade_records">交易失败</string>
+    <string name="status100_trade_records">待开票</string>
+    <string name="status101_trade_records">待开票审核</string>
+    <string name="status102_trade_records">交易成功</string>
+    <!-- 开票信息 -->
+    <string name="invoice_title">申请开票</string>
+    <string name="company_invoice">开票单位:</string>
+    <string name="tax_number">税号:</string>
+    <string name="bank_name_invoice">开户行:</string>
+    <string name="bank_account_invoice">账号:</string>
+    <string name="tel_invoice">联系电话:</string>
+    <string name="address_invoice">邮寄地址:</string>
+    <string name="amount_invoice">开票金额:</string>
+    <string name="apply_submit">提交申请</string>
+
+
+    <!-- logistics -->
+    <string name="title_choose_district">选择地区</string>
+    <string name="municipal_district">市辖区</string>
+    <string name="from_district">始发地</string>
+    <string name="destination_district">目的地</string>
+    <string name="from_select_remind">请先选择始发地</string>
+    <string name="destination_select_remind">请先选择目的地</string>
+    <string name="amount_need_remind">请填写吨数</string>
+    <string name="amount_logistics">运输数量</string>
+    <string name="unit">单位吨</string>
+    <string name="query">查询</string>
+    <string name="title_query_result">查询结果</string>
+    <string name="insurance_logistics">鸿网物流为您提供全程“免费保险”</string>
+    <string name="amount_less_logistics">承运量偏低请自行联系</string>
+    <string name="price_logistics">价格</string>
+    <string name="aokaiPrice">鸿网物流</string>
+    <string name="marketPrice">市场价</string>
+    <string name="price_l">¥%1$s</string>
+    <string name="contact_logistics">联系人</string>
+    <string name="telephone_logistics">电话</string>
+    <string name="company_name_logistics">公司名称</string>
+
+
+    <!-- api-->
+    <string name="error_connection">Error connecting to the server</string>
+    <string name="error_invalid_site">Invalid site address for hwdz app</string>
+    <string name="error_no_license">Not licensed for mobile connection </string>
+    <string name="error_generic_error">Application error(%1$d)</string>
+
+    <!-- 加载 刷新 -->
+    <string name="load_complete">上拉加载更多!</string>
+    <string name="load_finish">我也是有底线的 \-_-/ 别拉了</string>
+    <string name="loading_bottom">到底啦!</string>
+    <string name="loading">加载中...</string>
+    <!-- Footer view-->
+    <string name="load_more">上拉加载更多</string>
+    <string name="load_more_no">我也是有底线的</string>
+    <string name="load_more_error">加载出错，点击重试</string>
+
+    <string name="empty">暂时没有数据</string>
+
+    <!-- dialog-->
+
+    <string name="error_deal_vip">会员状态异常，请联系客服！</string>
+    <string name="error_business_vip">商家状态异常，请联系客服！</string>
+
+    <string name="contract_service">联系客服</string>
+
+    <string name="deal_error_remind">交易会员状态异常，请联系客服:021-39915739</string>
+    <string name="business_error_remind">	商家会员状态异常，请联系客服:021-39915720</string>
+
+    <string name="business_auth_remind">	商家暂未认证，请提交认证后进行报价，详情联系客服:021-39915720</string>
+    <string name="product_error_remind">	选择的产品原料暂未维护，请联系客服:021-39915739</string>
+    <string name="deposit_null_remind">	未缴纳会员授信保证金，暂时只允许做款到发货，如有疑问，请联系客服:021-39915739</string>
+    <string name="pay_first_only_remind">	该会员暂时只允许做款到发货，如有疑问，请联系客服:021-39915739</string>
+
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="title_dialog_deal">可多选您关注的品类</string>
+    <string name="collection_dialog">是否确认删除该条收藏</string>
+    <string name="at_least_one">至少选择一个选项</string>
+
+    <string name="pay_result_callback_msg">支付结果 %1$s</string>
+
+    <!-- 分享链接 -->
+    <string name="share_url">http://mb.ihwdz.com/article/article.html?id=%1$s&amp;datetime=%2$s</string>
+
+
+
+
+</resources>

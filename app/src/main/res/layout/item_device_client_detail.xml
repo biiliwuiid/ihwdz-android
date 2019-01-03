@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/device_table_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteBackground"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/deviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TableStyle1"
+            android:text="@string/deviceName"/>
+        <TextView
+            android:id="@+id/deviceBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TableStyle1"
+            android:text="@string/deviceBrand"/>
+        <TextView
+            android:id="@+id/deviceGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TableStyle1"
+            android:text="@string/deviceGrade"/>
+
+        <TextView
+            android:id="@+id/deviceQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TableStyle1"
+            android:text="@string/deviceQuantity"/>
+
+        <TextView
+            android:id="@+id/purchaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TableStyle1"
+            android:text="@string/purchaseDate"/>
+    </TableRow>
+</TableLayout>

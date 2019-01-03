@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/greyBackground"
+    tools:context="com.ihwdz.android.hwapp.ui.orders.warehouse.choose.ChooseWHActivity">
+
+    <include
+        layout="@layout/base_title_bar"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:imeOptions="actionSearch"
+        android:layout_gravity="center_vertical"
+        android:gravity="left"
+        android:background="@color/whiteBackground"
+        android:textColor="@color/blackText"
+        android:textSize="12sp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="搜索仓库" />
+
+    <LinearLayout
+        android:id="@+id/history_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:background="@color/whiteBackground"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/search_history"/>
+        <TextView
+            android:id="@+id/tv_history_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blackText4"
+            android:visibility="gone"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/search_history_empty"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/warehouse_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="16dp"
+        android:background="@color/whiteBackground"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_warehouse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

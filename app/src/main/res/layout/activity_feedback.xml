@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/greyBackground"
+    tools:context="com.ihwdz.android.hwapp.ui.me.feedback.FeedbackActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/base_title_bar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/type_feedback"
+                android:gravity="left"
+                android:textColor="@color/blackText"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="@dimen/item_check_width"
+                    android:layout_height="@dimen/item_check_height"
+                    android:id="@+id/radio_price"
+                    android:text="@string/price_feedback"
+                    style="@style/RadioLabelStyle"
+                    />
+
+                <RadioButton
+                    android:layout_width="@dimen/item_check_width"
+                    android:layout_height="@dimen/item_check_height"
+                    android:id="@+id/radio_material"
+                    android:text="@string/material_feedback"
+                    style="@style/RadioLabelStyle"
+                    />
+                <RadioButton
+                    android:layout_width="@dimen/item_check_width"
+                    android:layout_height="@dimen/item_check_height"
+                    android:id="@+id/radio_experience"
+                    android:text="@string/experience_feedback"
+                    style="@style/RadioLabelStyle"
+                    />
+
+                <RadioButton
+                    android:layout_width="@dimen/item_check_width_half"
+                    android:layout_height="@dimen/item_check_height"
+                    android:id="@+id/radio_other"
+                    android:text="@string/other_feedback"
+                    style="@style/RadioLabelStyle"
+                    />
+
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_feedback"
+            android:id="@+id/edit_feedback"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:padding="16dp"
+            android:gravity="left"
+            android:maxLength="200"
+            android:background="@color/whiteBackground"
+            style="@style/HintTextStyle"
+            android:hint="@string/hint_feedback"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_feedback_tel"
+            android:id="@+id/edit_telephone"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:padding="16dp"
+            android:gravity="left"
+            android:background="@color/whiteBackground"
+            style="@style/HintTextStyle"
+            android:hint="18511111111"
+            />
+
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/gradient_orange_oval_background"
+            android:textColor="@color/whiteBackground"
+            android:text="@string/submit"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/step1_layout"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_apply_step2"
+        android:clickable="true"
+        android:background="@color/whiteBackground">
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/item_padding_step2"
+            android:text="@string/telephone_no"
+            />
+
+        <EditText
+            android:id="@+id/edit_telephone_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/item_hint_padding"
+            android:background="@null"
+            style="@style/HintTextStyle"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:hint="@string/telephone_no_hint"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+
+    <RelativeLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_apply_step2"
+        android:clickable="true"
+        android:background="@color/whiteBackground">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/item_padding_step2"
+            android:text="@string/name_legal_person"
+            />
+
+        <EditText
+            android:id="@+id/edit_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/item_hint_padding"
+            android:background="@null"
+            style="@style/HintTextStyle"
+            android:gravity="left"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:hint="@string/name_hint"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <RelativeLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_apply_step2"
+        android:clickable="true"
+        android:background="@color/whiteBackground">
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/item_padding_step2"
+            android:textColor="@color/blackText"
+            android:textSize="12sp"
+            android:text="@string/id_card_no"
+            />
+
+        <EditText
+            android:id="@+id/edit_id_card_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/item_hint_padding"
+            android:background="@null"
+            style="@style/HintTextStyle"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:hint="@string/id_card_no_hint"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/linear4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/item_height_apply_step2"-->
+        <!--android:clickable="true"-->
+        <!--android:background="@color/whiteBackground">-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv4"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginLeft="@dimen/item_padding_step2"-->
+            <!--android:text="@string/authentication"-->
+            <!--/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/edit_authentication"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:gravity="left"-->
+            <!--android:layout_marginLeft="@dimen/item_hint_padding"-->
+            <!--android:background="@null"-->
+            <!--style="@style/HintTextStyle"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:singleLine="true"-->
+            <!--android:hint="@string/verification_hint"-->
+            <!--/>-->
+
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

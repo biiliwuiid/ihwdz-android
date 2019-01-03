@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.ihwdz.android.hwapp.widget.MultiLineRadioGroup
+        android:id="@+id/multi_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/bt1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="ABS"
+                style="@style/AttentionCheckStyle"/>
+            <CheckBox
+                android:id="@+id/bt2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="PC"
+                style="@style/AttentionCheckStyle"/>
+
+            <CheckBox
+                android:id="@+id/bt3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="LLDPE"
+                style="@style/AttentionCheckStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <CheckBox
+                android:id="@+id/bt4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/AttentionCheckStyle"
+                android:text="LDPE" />
+            <CheckBox
+                android:id="@+id/bt5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/AttentionCheckStyle"
+                android:text="HDPE" />
+            <CheckBox
+                android:id="@+id/bt6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/AttentionCheckStyle"
+                android:text="PP" />
+
+        </LinearLayout>
+
+    </com.ihwdz.android.hwapp.widget.MultiLineRadioGroup>
+
+</LinearLayout>

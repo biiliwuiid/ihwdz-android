@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/whiteBackground"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    tools:context="com.ihwdz.android.hwapp.ui.home.priceinquiry.PriceInquiryActivity">
+
+    <include
+        layout="@layout/base_title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/market_factory"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/market"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:enabled="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColor="@drawable/text_color_selector"
+                android:text="市场指导价" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/grayLine"
+                android:layout_marginTop="@dimen/line_padding_top_title"
+                android:layout_marginBottom="@dimen/line_padding_top_title"
+                android:id="@+id/view3" />
+
+            <TextView
+                android:id="@+id/factory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:enabled="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColor="@drawable/text_color_selector"
+                android:text="出厂价" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="-1dp"
+            android:background="@color/grayLine" />
+
+    </LinearLayout>
+
+    <!-- breeds list -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/horizontalRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:paddingRight="16dp" />
+
+    <!-- menu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grayLine" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <RadioGroup
+                android:id="@+id/group"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/title_height"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.ihwdz.android.hwapp.widget.ToggleRadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="@dimen/item_check_width"
+                    android:layout_height="@dimen/item_check_height"
+                    android:clickable="true"
+                    android:text="@string/spec_p"
+                    android:visibility="gone"
+                    style="@style/RadioWhiteMenuStyle"/>
+                <View
+                    android:visibility="gone"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/line_padding_top_title"
+                    android:layout_marginBottom="@dimen/line_padding_top_title"
+                    android:background="@color/grayLine" />
+
+                <com.ihwdz.android.hwapp.widget.ToggleRadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="@dimen/item_check_width"
+                    android:layout_height="@dimen/item_check_height"
+                    android:text="@string/spec_p"
+                    style="@style/RadioWhiteMenuStyle"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/line_padding_top_title"
+                    android:layout_marginBottom="@dimen/line_padding_top_title"
+                    android:background="@color/grayLine" />
+
+                <com.ihwdz.android.hwapp.widget.ToggleRadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="@dimen/item_check_width"
+                    android:layout_height="@dimen/item_check_height"
+                    android:text="@string/brand_p"
+                    style="@style/RadioWhiteMenuStyle"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/line_padding_top_title"
+                    android:layout_marginBottom="@dimen/line_padding_top_title"
+                    android:background="@color/grayLine" />
+
+                <com.ihwdz.android.hwapp.widget.ToggleRadioButton
+                    android:id="@+id/radio4"
+                    android:layout_width="@dimen/item_check_width"
+                    android:layout_height="@dimen/item_check_height"
+                    android:text="@string/area_p"
+                    style="@style/RadioWhiteMenuStyle"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/line_padding_top_title"
+                    android:layout_marginBottom="@dimen/line_padding_top_title"
+                    android:background="@color/grayLine" />
+
+                <!-- 日期 -->
+                <com.ihwdz.android.hwapp.widget.ToggleRadioButton
+                    android:id="@+id/radio_date"
+                    android:layout_width="@dimen/item_check_width"
+                    android:layout_height="@dimen/item_check_height"
+                    android:clickable="true"
+                    android:text="@string/date"
+                    style="@style/RadioWhiteMenuStyle"/>
+                <View
+                    android:visibility="gone"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/line_padding_top_title"
+                    android:layout_marginBottom="@dimen/line_padding_top_title"
+                    android:background="@color/grayLine" />
+
+            </RadioGroup>
+
+            <!-- 日期 -> toggleRadioButton -->
+            <LinearLayout
+                android:id="@+id/date_layout"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/title_height"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/title_padding"
+                android:paddingLeft="@dimen/title_padding"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/blackText"
+                    android:text="日期" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="-2dp"
+            android:background="@color/grayLine" />
+
+
+    </LinearLayout>
+
+    <!-- empty remind -->
+    <TextView
+        android:id="@+id/empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/blackText"
+        android:text="@string/empty"/>
+
+    <!-- menu list and price list -->
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refresher"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- 菜单数据 -->
+            <LinearLayout
+                android:id="@+id/layout_fuzzy_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_fuzzy_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/whiteBackground"
+                    android:layout_marginBottom="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/greyFuzzy" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!-- 未登录时 只允许查看一页数据;点击登录-->
+    <LinearLayout
+        android:id="@+id/layout_load_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyBackground"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="0dp">
+        <Button
+            android:id="@+id/bt_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gradient_orange_oval_background"
+            android:textColor="@color/whiteBackground"
+            android:text="@string/look_more_price"
+            />
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TitleTextStyle"
+            android:visibility="gone"
+            android:text="@string/load_more_price"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

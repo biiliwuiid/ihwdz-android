@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ihwdz.android.hwapp.ui.login.login.pwdforgot.PwdForgotActivity">
+
+    <include layout="@layout/base_title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/item_normal_padding"
+        >
+
+        <RelativeLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_per"
+            android:clickable="true"
+            android:background="@color/whiteBackground">
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:foregroundGravity="center"
+                android:src="@drawable/telephone"/>
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/iv1"
+                android:layout_marginLeft="@dimen/item_icon_padding"
+                android:text="@string/telephone"
+                style="@style/PerCTextStyle"/>
+
+            <EditText
+                android:id="@+id/edit_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/item_hint_padding"
+                android:background="@null"
+                style="@style/HintTextStyle"
+                android:inputType="phone"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:hint="@string/telephone_no_hint"
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grayLineDarker"/>
+
+        <RelativeLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_per"
+            android:clickable="true"
+            android:background="@color/whiteBackground">
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:foregroundGravity="center"
+                android:src="@drawable/verification_code"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/iv2"
+                android:layout_marginLeft="@dimen/item_icon_padding"
+                android:text="@string/verification"
+                style="@style/PerCTextStyle"/>
+
+
+            <EditText
+                android:id="@+id/edit_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/item_hint_padding"
+                style="@style/HintTextStyle"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:singleLine="true"
+                android:hint="@string/verification_hint"
+                />
+            <com.ihwdz.android.hwapp.widget.CountDownTextView
+                android:id="@+id/tv_send_verify_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/verification_get"
+                style="@style/HintTextStyle"
+                android:background="@drawable/oval_black_bg" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grayLineDarker"/>
+
+        <RelativeLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_per"
+            android:clickable="true"
+            android:background="@color/whiteBackground">
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:foregroundGravity="center"
+                android:src="@drawable/locked"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/iv3"
+                android:layout_marginLeft="@dimen/item_icon_padding"
+                android:text="@string/pwd"
+                style="@style/PerCTextStyle"/>
+
+
+            <EditText
+                android:id="@+id/edit_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/item_hint_padding"
+                style="@style/HintTextStyle"
+                android:inputType="textPassword"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:singleLine="true"
+                android:hint="@string/pwd_hint"
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grayLineDarker"/>
+
+        <RelativeLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_per"
+            android:clickable="true"
+            android:background="@color/whiteBackground">
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:foregroundGravity="center"
+                android:src="@drawable/locked"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/iv4"
+                android:layout_marginLeft="@dimen/item_icon_padding"
+                android:text="@string/pwd_confirm"
+                style="@style/PerCTextStyle"/>
+
+
+            <EditText
+                android:id="@+id/edit_pwd2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/item_hint_padding"
+                style="@style/HintTextStyle"
+                android:inputType="textPassword"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:singleLine="true"
+                android:hint="@string/pwd_hint"
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grayLineDarker"/>
+
+        <Button
+            android:id="@+id/bt_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gradient_orange_oval_background"
+            android:textColor="@color/whiteBackground"
+            android:text="@string/complete" />
+
+    </LinearLayout>
+
+</LinearLayout>

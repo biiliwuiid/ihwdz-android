@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:background="@color/greyBackground">
+
+    <LinearLayout
+        android:id="@+id/content_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:background="@color/whiteBackground"
+        android:paddingTop="@dimen/padding_top_item"
+        android:paddingLeft="@dimen/padding_left_item"
+        android:paddingRight="@dimen/padding_right_item"
+        android:paddingBottom="@dimen/padding_bottom_item"
+        >
+        <ImageView
+            android:layout_width="@dimen/item_msg_iv_size"
+            android:layout_height="@dimen/item_msg_iv_size"
+            android:id="@+id/articleImg"
+            android:scaleType="fitXY"
+            android:src="@drawable/message_show"
+            />
+
+        <LinearLayout
+            android:id="@+id/comment_linear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_detail_comment_height"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/title"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical"
+                    android:text="@string/title_msg"
+                    style="@style/TitleTextStyle"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/date"
+                    android:layout_weight="0"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical"
+                    android:text="2018-09-14"
+                    style="@style/NormalTextStyle"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/content"
+                android:gravity="left"
+                android:text="content"
+                android:singleLine="true"
+                style="@style/NormalTextStyle"
+                android:layout_marginBottom="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"
+        />
+
+
+
+</LinearLayout>

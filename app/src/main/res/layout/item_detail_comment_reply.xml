@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_item_news"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:background="@color/greyBackground"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/name"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/blackText4"
+            android:text="匿名:"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/content"
+            android:layout_weight="0"
+            android:layout_gravity="left"
+            android:layout_marginLeft="6dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/blackText4"
+            android:text="0"
+            />
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="@color/grayLineDarker"-->
+        <!--/>-->
+
+
+
+</LinearLayout>

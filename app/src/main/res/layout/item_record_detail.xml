@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/whiteBackground">
+
+    <TextView
+        android:id="@+id/tv_breed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/record_margin"
+        android:textColor="@color/blackText"
+        android:gravity="left"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="GPPS | 525 | 中国信国安"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/record_margin"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/blackText2"
+        android:gravity="left"
+        android:textSize="12sp"
+        android:text="10 吨    9852 元/吨"/>
+
+    <View
+        android:id="@+id/dotted_line"
+        android:layout_width="200dp"
+        android:layout_height="1.5px"
+        android:layerType="software"
+        android:background="@drawable/dotted_line" />
+
+
+</LinearLayout>

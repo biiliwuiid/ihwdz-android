@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorBottomBartTitleBefore">#999999</color>
+    <color name="colorBottomBartTitleAfter">#f74522</color>
+    <!-- homepage-->
+    <color name="background_grey_separation">#c6c4c4</color>
+    <color name="background_grey">#edebeb</color>
+    <color name="background_content">#fcfafa</color>
+    <color name="background_selected_true">#f56607</color>
+    <color name="background_selected_false">#fcfafa</color>
+
+    <color name="text_black_title">#060606</color>
+
+    <!-- index -->
+    <color name="scroll_words_red">#fa1a38</color>
+    <color name="scroll_words_green">#04a11e</color>
+    <color name="scroll_words_black">#212121</color>
+
+    <!-- seek client -->
+    <color name="words_orange">#ff470f</color>
+
+    <!--主题颜色  Toolbar !!! -->
+    <color name="colorTheme">#ff470f</color>
+
+    <color name="black">#FF000000</color>
+    <color name="near_black">#FF1B1B1B</color>
+    <!--字体的颜色，纯黑色-->
+    <color name="blackText">#333333</color>
+    <!--字体的颜色 黑色1 -->
+    <color name="blackText1">#212121</color>
+    <!--字体的颜色 黑色2 -->
+    <color name="blackText2">#666666</color>
+    <!--字体的颜色 黑色3-->
+    <color name="blackText3">#636869</color>
+    <!--字体的颜色 黑色4-->
+    <color name="blackText4">#999999</color>
+
+    <color name="disableButton">#a9a9a9</color>
+
+
+    <color name="warm_grey_80_opacity">#CCE7E3DE</color>
+    <!-- dialog -->
+    <color name="itemBackground">#DD7D7D7D</color>
+    <!--灰色2-->
+    <color name="gray_black">#703f3f3f</color>
+    <!-- 背景               纯白色-->
+    <color name="whiteBackground">#FFFFFF</color>
+    <!-- 偏白色大背景  all -->
+    <color name="whiteBg">#f5f5f7</color>
+    <!-- 偏灰色大背景  all: index -->
+    <color name="greyBackground">#F7F7F7</color>
+    <color name="greyBackgroundDarker">#E5E5E5</color>
+    <color name="greyBackgroundDarker1">#E5E5E5</color>
+
+    <!-- 模糊背景 -->
+    <color name="greyFuzzy">#66000000</color>
+
+
+    <!--背景 页面背景的颜色-->
+    <color name="colorPageBg">#f2f4f5</color>
+    <!--背景 item的5.0一下版本选择器颜色-->
+    <color name="colorWhiteBg">#d9d9d9</color>
+    <!--透明色-->
+    <color name="colorTransparent">#00000000</color>
+    <!--侧边栏分割线-->
+    <color name="colorNavLine">#E0E0E0</color>
+
+    <!-- 灰色下划线 -->
+    <color name="grayLine">#e5e5e5</color>
+    <color name="grayLineDarker">#c7c7c7</color>
+    <color name="grayCircleBg">#8F8E94</color>
+    <color name="grayTransparentCircleBg">#b2939393</color>
+    <!-- 灰色，二级字段 -->
+    <color name="gray2">#666666</color>
+    <!-- 灰色，三级字段 -->
+    <color name="gray3">#c3c3c3</color>
+
+    <!-- 底部导航选择红色 -->
+    <color name="redTab">#D03E49</color>
+    <!-- 主题色-->
+    <color name="orangeTab">#fa8317</color>
+    <color name="light_pink">#FFEDDD</color>
+
+    <color name="light_orange">#FCBB92</color>
+    <color name="orange_tag">#faa975</color>
+    <color name="light_orange2">#FA8317</color>
+    <color name="start_orange">#FF8500</color>
+    <color name="end_orange">#F64927</color>
+
+
+    <color name="link_blue">#6BB2FC</color>
+    <color name="priority_blue">#20cbff</color>
+    <color name="priority_green">#99CC00</color>
+    <color name="priority_yellow">#FFCC33</color>
+    <color name="priority_red">#FF0033</color>
+</resources>

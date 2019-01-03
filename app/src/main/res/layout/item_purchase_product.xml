@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear_item_product"
+    android:background="@color/greyBackground"
+    android:orientation="vertical">
+
+    <!-- 产品明细 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@color/greyBackground">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_detail"
+            style="@style/MarginTextLeftStyle"/>
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            style="@style/MarginTextRightStyle"
+            android:textColor="@color/orangeTab"
+            android:text="@string/delete" />
+
+    </LinearLayout>
+
+    <!-- 原料品名 -->
+    <RelativeLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal"
+        android:background="@color/whiteBackground">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            style="@style/MarginText14LeftStyle"
+            android:text="@string/breed_purchase" />
+
+        <com.ihwdz.android.hwapp.widget.DropEditText
+            android:id="@+id/edit_breed"
+            android:layout_width="@dimen/width_box_purchase"
+            android:layout_height="@dimen/height_box_purchase"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            />
+        <!-- app:drawableRight="@drawable/drop" -->
+        <!-- android:background="@drawable/bg_edit_box" -->
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <!-- 原料牌号 -->
+    <RelativeLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@color/whiteBackground">
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            style="@style/MarginText14LeftStyle"
+            android:text="@string/brand_purchase" />
+
+        <com.ihwdz.android.hwapp.widget.DropEditText
+            android:id="@+id/edit_spec"
+            android:layout_width="@dimen/width_box_purchase"
+            android:layout_height="@dimen/height_box_purchase"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <!-- 生产厂家 -->
+    <RelativeLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@color/whiteBackground">
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            style="@style/MarginText14LeftStyle"
+            android:text="@string/factory_purchase" />
+
+        <com.ihwdz.android.hwapp.widget.DropEditText
+            android:id="@+id/edit_factory"
+            android:layout_width="@dimen/width_box_purchase"
+            android:layout_height="@dimen/height_box_purchase"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <!-- 数量 -->
+    <RelativeLayout
+        android:id="@+id/linear4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@color/whiteBackground">
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            style="@style/MarginText14LeftStyle"
+            android:text="@string/amount_purchase" />
+
+        <EditText
+            android:id="@+id/edit_amount"
+            android:layout_width="@dimen/width_box_purchase"
+            android:layout_height="@dimen/height_box_purchase"
+            android:background="@drawable/bg_edit_box"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+</LinearLayout>

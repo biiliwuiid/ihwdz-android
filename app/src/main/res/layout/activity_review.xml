@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/greyBackground"
+    tools:context="com.ihwdz.android.hwapp.ui.purchase.reviewquote.ReviewActivity">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_feedback_tel"
+        android:id="@+id/edit"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="16dp"
+        android:gravity="left"
+        android:background="@color/whiteBackground"
+        android:textColor="@color/blackText"
+        android:textSize="12sp"
+        android:hint="10000.00" />
+
+    <TextView
+        android:id="@+id/tv_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:paddingLeft="32dp"
+        android:paddingTop="16dp"
+        android:textSize="12sp"
+        android:textColor="@color/blackText2"
+        android:text="@string/credit_left"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_feedback"
+        android:visibility="gone"
+        android:id="@+id/edit_remarks"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="16dp"
+        android:gravity="left"
+        android:maxLength="200"
+        android:background="@color/whiteBackground"
+        style="@style/HintTextStyle"
+        android:hint="@string/remark_hint"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_button_big"
+        android:background="@color/whiteBackground"
+        android:padding="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_orange_oval_background"
+            android:textColor="@color/whiteBackground"
+            android:text="@string/quote_confirm" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

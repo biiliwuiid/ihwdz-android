@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 填充颜色 -->
+    <solid android:color="@color/grayLine"/>
+    <!-- 线的宽度，颜色 -->
+    <stroke android:width="0px"
+        android:color="@color/end_orange"/>
+    <!-- 矩形的圆角半径 -->
+    <corners android:radius="10dp" />
+
+    <padding
+        android:bottom="2dp"
+        android:left="8dp"
+        android:right="8dp"
+        android:top="2dp" />
+
+</shape>
+<!-- 申请开通交易会员 校验社会信用代码、单位名称 是否已存在-->

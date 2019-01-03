@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/gradient_orange_background"
+        style="@style/ClubToolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <FrameLayout
+            android:id="@+id/fl_title_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_gravity="left"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/back_white" />
+        </FrameLayout>
+
+
+        <CheckBox
+            android:id="@+id/cb_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="title111"
+            android:textSize="@dimen/toolbar_title_size"
+            android:visibility="gone"
+            style="@style/CheckableToolbarStyle"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:visibility="visible"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+            <TextView
+                android:id="@+id/tv_title"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textColor="@color/whiteBackground"
+                android:text="title"
+                android:textSize="@dimen/toolbar_title_size"/>
+            <ImageView
+                android:id="@+id/iv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_title"
+                android:layout_marginLeft="0dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_arrow_drop_down_white_24dp" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_title_menu_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <RadioButton
+                android:id="@+id/radio_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                style="@style/RadioNoImageStyle"
+                android:text="@string/collection_title"/>
+
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textColor="@color/whiteBackground"
+                android:text="保存"
+                android:textSize="18sp"/>
+
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:src="@drawable/user_notes" />
+        </FrameLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

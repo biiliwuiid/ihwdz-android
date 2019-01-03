@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteBackground">
+    <!--   tools:context="com.ihwdz.android.hwapp.ui.home.clientseek.ClientFilterActivity" -->
+    <include
+        layout="@layout/base_title_bar"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/greyBackground"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/title_height"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_left_pull_ma"
+                android:gravity="center"
+                style="@style/CommonTextStyle"
+                android:textColor="@color/orangeTab"
+                android:text="@string/all_filter_cl" />
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:src="@drawable/pull_up"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/line_padding_top_title"
+            android:layout_marginBottom="@dimen/line_padding_top_title"
+            android:background="@color/grayLine" />
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/title_height"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_left_pull_ma"
+                style="@style/CommonTextStyle"
+                android:text="@string/more_filter_cl" />
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:src="@drawable/pull2"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!-- fragment more-->
+    <LinearLayout
+        android:id="@+id/frame_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/whiteBg"
+        android:orientation="vertical"
+        >
+        <!--<include-->
+            <!--layout="@layout/fragment_checkable_fileter"/>-->
+        <include
+            layout="@layout/fragment_checkable_filter"/>
+
+    </LinearLayout>
+
+    <!-- all area -->
+    <LinearLayout
+        android:id="@+id/frame_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteBackground"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:padding="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                style="@style/CommonTextStyle"
+                android:text="@string/selected_filter_cl"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_selected"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="-1px"
+            android:background="@color/grayLineDarker" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_province"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/greyBackground"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteBackground"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_marginTop="-50dp"
+        android:background="@color/whiteBackground"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/bt_clear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/whiteBackground"
+            android:orientation="vertical"
+            android:clickable="true"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayLineDarker"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/clear_filter_cl"
+                android:textColor="@color/orangeTab"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bt_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_orange_background"
+            android:orientation="vertical"
+            android:clickable="true"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayLineDarker"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/confirmation_filter_cl"
+                android:textColor="@color/whiteBackground"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

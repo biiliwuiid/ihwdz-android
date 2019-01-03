@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/linear"
+    android:background="@color/whiteBackground"
+    >
+
+    <!-- 订单 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title_quote"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/whiteBackground">
+        <!-- 公司名称 -> 订单号 -->
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/blackText"
+            android:text="公司名称"
+            />
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/orangeTab"
+            android:textSize="12sp"
+            android:text="订单状态" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker"/>
+
+    <!-- 手续费 -->
+    <TextView
+        android:id="@+id/tv_charges"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="手续费："
+        style="@style/Right12TextStyle"/>
+
+    <!-- 合计 -->
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="合计："
+        style="@style/Right12TextStyle"/>
+
+    <!-- use for button click event -->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:clickable="true"-->
+        <!--android:background="@color/whiteBackground"-->
+        <!--android:id="@+id/linear0">-->
+
+    <!--</LinearLayout>-->
+
+
+    <!-- button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:id="@+id/bt_linear"
+        android:background="@color/whiteBackground">
+        <TextView
+            android:id="@+id/tv_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="支付手续费"
+            android:textColor="@color/orangeTab"
+            android:background="@drawable/orange_ring_button"
+            style="@style/Right12TextStyle"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/greyBackground"/>
+
+</LinearLayout>

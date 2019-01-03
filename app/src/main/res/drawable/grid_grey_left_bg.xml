@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="@dimen/grid_border_offset"
+        android:top="@dimen/grid_border_offset"
+        android:right="@dimen/grid_border_offset">
+        <shape>
+            <solid android:color="@color/colorTransparent"/>
+            <stroke
+                android:width="@dimen/grid_border"
+                android:color="@color/grayLineDarker"/>
+        </shape>
+    </item>
+</layer-list>

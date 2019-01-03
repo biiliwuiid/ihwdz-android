@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:background="@color/whiteBackground">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackText"
+        android:textSize="12sp"
+        android:text="情绪指数"
+        />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/orangeTab"/>
+
+    <!-- horizontal scroll TextView -->
+
+    <com.ihwdz.android.hwapp.widget.MarqueeRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_vertical"
+        app:paddingStart="0dp"
+        />
+
+</LinearLayout>

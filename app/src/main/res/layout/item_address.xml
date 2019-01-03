@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_linkman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AddressTextStyle"
+                    android:text="linkman"/>
+                <TextView
+                    android:id="@+id/tv_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    style="@style/AddressTextStyle"
+                    android:background="@drawable/orange_pink_tag"
+                    android:textColor="@color/whiteBackground"
+                    android:text="@string/default_data"/>
+
+                <TextView
+                    android:id="@+id/tv_checking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginLeft="16dp"
+                    style="@style/AddressTextStyle"
+                    android:background="@drawable/grey_rect_tag"
+                    android:textColor="@color/whiteBackground"
+                    android:text="@string/checking_data"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AddressTextStyle"
+                android:lineSpacingMultiplier="1.3"
+                android:text="address"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_gravity="right"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center">
+            <View
+                android:layout_width="2px"
+                android:layout_height="20dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/grayLineDarker"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blackText2"
+                android:textSize="12sp"
+                android:text="@string/edit"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLineDarker" />
+
+</LinearLayout>
+
+
+<!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linear"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:paddingLeft="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:orientation="vertical">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_linkman"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/AddressTextStyle"-->
+                <!--android:text="linkman"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_default"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--style="@style/AddressTextStyle"-->
+                <!--android:background="@drawable/orange_pink_tag"-->
+                <!--android:textColor="@color/whiteBackground"-->
+                <!--android:text="@string/default_data"/>-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_address"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--style="@style/AddressTextStyle"-->
+            <!--android:text="address"/>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linear_edit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:clickable="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingLeft="16dp"-->
+        <!--android:paddingRight="16dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:gravity="center">-->
+        <!--<View-->
+            <!--android:layout_width="2px"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:background="@color/grayLineDarker"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/blackText2"-->
+            <!--android:textSize="12sp"-->
+            <!--android:text="@string/edit"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/grayLineDarker" />-->
+
+<!--</RelativeLayout>-->
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.yc.cn.ycbannerlib.BannerView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+        <TextView
+            android:id="@+id/tv_home_first"
+            style="@style/WeightAttr"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/prices_inquiring"
+            android:text="查价格" />
+        <TextView
+            android:id="@+id/tv_home_second"
+            style="@style/WeightAttr"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/info_days"
+            android:text="每日讯" />
+        <TextView
+            android:id="@+id/tv_home_third"
+            style="@style/WeightAttr"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/index_inquiring"
+            android:text="看指数" />
+        <TextView
+            android:id="@+id/tv_home_four"
+            style="@style/WeightAttr"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/clients_seeking"
+            android:text="找客户" />
+        <TextView
+            android:id="@+id/tv_home_five"
+            style="@style/WeightAttr"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/material_seeking"
+            android:text="买原料" />
+
+    </LinearLayout>
+
+    <include layout="@layout/view_vlayout_marquee"/>
+
+    <com.ns.yc.yccardviewlib.CardViewLayout
+        android:id="@+id/cardView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        app:displayCount="1.8"
+        app:interval="10dp"
+        app:scaleStep="0.32"
+        app:sizeRatio="1.12" />
+
+</LinearLayout>
