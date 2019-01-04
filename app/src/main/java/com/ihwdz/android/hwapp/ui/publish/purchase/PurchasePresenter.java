@@ -627,7 +627,7 @@ public class PurchasePresenter implements PurchaseContract.Presenter{
                         }else {
                             // isSubmitClicked = false;
                             setIsSubmitClicked(false);
-                            if (data.msg.contains(":")){
+                            if (data.msg.contains("：")){
                                 LogUtils.printCloseableInfo(TAG, "onNext doSubmit:data.msg:  " + data.msg);
                                 mView.showRemindDialog(data.msg);
                             }else {
