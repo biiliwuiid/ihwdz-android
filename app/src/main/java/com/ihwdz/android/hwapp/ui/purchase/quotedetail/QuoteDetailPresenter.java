@@ -70,6 +70,8 @@ public class QuoteDetailPresenter implements QuoteDetailContract.Presenter{
     private String warehouseJson = null;          // 仓库
     private String unitPriceTitle = null;          // 单价
 
+    private boolean isSubmitClicked = false;    // 是否在提交
+
     @Inject
     public QuoteDetailPresenter(QuoteDetailActivity activity){
         this.parentActivity = activity;
@@ -405,6 +407,11 @@ public class QuoteDetailPresenter implements QuoteDetailContract.Presenter{
     }
 
     @Override
+    public boolean getIsSubmitClicked() {
+        return isSubmitClicked;
+    }
+
+    @Override
     public void gotoMyQuote() {
         // 报价成功后 前往求购池 - 我的报价
         MainActivity.startActivity(parentActivity,1);
@@ -444,6 +451,8 @@ public class QuoteDetailPresenter implements QuoteDetailContract.Presenter{
         LogUtils.printCloseableInfo(TAG, "deliveryDate : " + deliveryDate);
         LogUtils.printCloseableInfo(TAG, "warehouseJson : " + warehouseJson);
 
+        isSubmitClicked = true;
+        mView.makeButtonDisable(isSubmitClicked);
         Subscription rxSubscription = model
                 .postQuoteData(memberPurchaseId, price, isSupplierDistribution, deliveryDate,warehouseJson)
                 .compose(RxUtil.<VerifyData>rxSchedulerHelper())

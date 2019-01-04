@@ -24,6 +24,8 @@ public interface QuoteDetailContract {
         void updateView(QuoteDetailData data);   //  更新报价详情
         void updateDate(String date);
         void showPromptMessage(String message);  //  提示信息
+
+        void makeButtonDisable(boolean disable); // 按钮状态(是否可用)
     }
     int MODE_QUOTE_DETAIL = 0;   // 报价详情
     int MODE_QUOTE_CONFIRM = 1;  // 确认报价
@@ -50,6 +52,8 @@ public interface QuoteDetailContract {
         void storeWarehouse();    // 选中的仓库记录在本地
 
         boolean checkCurrentDataComplete();
+
+        boolean getIsSubmitClicked();// 提交按钮 是否点击
 
         void gotoMyQuote();       // 提交成功后 -> 我的报价
         void doQuote();           // 确认报价 -> 回到 我的报价

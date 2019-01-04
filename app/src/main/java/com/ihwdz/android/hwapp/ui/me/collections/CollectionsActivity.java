@@ -46,6 +46,10 @@ public class CollectionsActivity extends BaseActivity implements CollectionContr
 
     public static void startCollectionsActivity(Context context) {
         Intent intent = new Intent(context, CollectionsActivity.class);
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
     }
 

@@ -85,7 +85,7 @@ public class PurchaseActivity extends BaseActivity implements PurchaseContract.V
 
     private void initStr() {
         disableDrawable = getResources().getDrawable(R.drawable.bt_disable_oval_bg);
-        enableDrawable = getResources().getDrawable(R.drawable.gradient_orange_background);
+        enableDrawable = getResources().getDrawable(R.drawable.gradient_orange_oval_background);
 
         receiverStr = getResources().getString(R.string.order_receiver);
         addressStr = getResources().getString(R.string.order_address);

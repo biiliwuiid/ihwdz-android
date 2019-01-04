@@ -570,11 +570,18 @@ public class PurchasePresenter implements PurchaseContract.Presenter{
         return isSubmitClicked;
     }
 
+    @Override
+    public void setIsSubmitClicked(boolean isClicked) {
+        this.isSubmitClicked = isClicked;
+        mView.makeButtonDisable(isSubmitClicked);
+    }
+
 
     @Override
     public void doSubmit() {
-        isSubmitClicked = true;
+        // isSubmitClicked = true;
         // mView.makeButtonDisable(isSubmitClicked);   // 控制按钮不可用
+        setIsSubmitClicked(true);
 
         mPurchaseList = mAdapter.getDataList();
 
@@ -608,7 +615,8 @@ public class PurchasePresenter implements PurchaseContract.Presenter{
                     public void onError(Throwable e) {
                         LogUtils.printError(TAG, "onError doSubmit: " + e.toString());
                         mView.showPromptMessage(e.toString());
-                        isSubmitClicked = false;
+                        // isSubmitClicked = false;
+                        setIsSubmitClicked(false);
                     }
 
                     @Override
@@ -617,7 +625,8 @@ public class PurchasePresenter implements PurchaseContract.Presenter{
                         if (TextUtils.equals("0", data.code)){
                             gotoMyPurchase();
                         }else {
-                             isSubmitClicked = false;
+                            // isSubmitClicked = false;
+                            setIsSubmitClicked(false);
                             if (data.msg.contains(":")){
                                 LogUtils.printCloseableInfo(TAG, "onNext doSubmit:data.msg:  " + data.msg);
                                 mView.showRemindDialog(data.msg);

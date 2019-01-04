@@ -66,6 +66,7 @@ public interface PurchaseContract {
         void gotoSelectAddress();    // 选择 收货地址
 
         boolean getIsSubmitClicked();// 提交按钮 是否点击
+        void setIsSubmitClicked(boolean isClicked);
 
         void doSubmit();             // 提交 求购数据
         void gotoMyPurchase();       // 提交成功后 -> 我的求购

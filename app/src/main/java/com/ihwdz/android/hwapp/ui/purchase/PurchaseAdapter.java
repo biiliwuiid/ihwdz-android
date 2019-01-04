@@ -481,6 +481,7 @@ public class PurchaseAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                     color = mContext.getResources().getColor(R.color.orangeTab);
                     quoteStr = mContext.getResources().getString(R.string.quote_showed);
                     buttonBg = null;
+                    break;
                 case -2: // 未登录 -  显示 “报价”按钮 点击-> 登录
                     isQuoteBtShow = true;
                     isQuoteEnable = true;

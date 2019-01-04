@@ -2,6 +2,7 @@ package com.ihwdz.android.hwapp.ui.purchase.quotedetail;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.CheckBox;
@@ -80,6 +81,9 @@ public class QuoteDetailActivity extends BaseActivity implements QuoteDetailCont
     private String totalAmount;
     double price = 0, qty = 0;   // 单价 & 采购量
 
+    private Drawable disableDrawable;  // 按钮不可用
+    private Drawable enableDrawable;   // 按钮可用
+
     @Inject QuoteDetailContract.Presenter mPresenter;
     static final String IS_DETAIL = "is_detail";   // true:报价详情  false:报价动作
     static final String ID = "id";
@@ -121,6 +125,10 @@ public class QuoteDetailActivity extends BaseActivity implements QuoteDetailCont
     @Override
     public void initView() {
         initToolbar();
+
+        disableDrawable = getResources().getDrawable(R.drawable.bt_disable_bg);
+        enableDrawable = getResources().getDrawable(R.drawable.gradient_orange_background);
+
         currency = getResources().getString(R.string.currency_sign);   // 货币符号
         breed = getResources().getString(R.string.purchase_breed);
         amount = getResources().getString(R.string.purchase_amount);
@@ -441,6 +449,16 @@ public class QuoteDetailActivity extends BaseActivity implements QuoteDetailCont
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
+    @Override
+    public void makeButtonDisable(boolean disable) {
+        if (disable){
+            tvBottomBt.setBackground(disableDrawable); // 不可用
+        }else {
+            tvBottomBt.setBackground(enableDrawable);  // 可用
+        }
+        tvBottomBt.setClickable(!disable);
+    }
+
     @OnClick(R.id.linear_warehouse_choose)
     public void onWarehouseClicked(){
         mPresenter.updateWarehouse();
@@ -471,12 +489,11 @@ public class QuoteDetailActivity extends BaseActivity implements QuoteDetailCont
 
         }else {
             // 报价 “确认报价”
-
             // set it in presenter
             mPresenter.setWarehouseJson(Constant.warehouseJson);
             // mPresenter.setCurrentPrice(Constant.quotePrice); set-onStart()
 
-            if (mPresenter.checkCurrentDataComplete()){
+            if (mPresenter.checkCurrentDataComplete() && !mPresenter.getIsSubmitClicked()){
                 mPresenter.doQuote();
             }else {
                 showPromptMessage("请完整填写报价信息！");
